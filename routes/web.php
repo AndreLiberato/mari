@@ -24,3 +24,7 @@ Route::get('/cadastroPaciente', function () {
 Route::get('/cadastroPrescritor', function () {
     return view('cadastroPrescritor');
 });
+
+Route::get('/login', function() {
+    return view('auth.login');
+});

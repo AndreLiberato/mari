@@ -1,3 +1,3 @@
 import './bootstrap';
-import { initTE } from "tw-elements";
-initTE({ });
+import { Input, initTE } from "tw-elements";
+initTE({ Input });
