@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/cadastro', function () {
+Route::get('/cadastroPaciente', function () {
     return view('cadastroPaciente');
+});
+
+Route::get('/cadastroPrescritor', function () {
+    return view('cadastroPrescritor');
 });
