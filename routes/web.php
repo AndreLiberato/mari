@@ -28,3 +28,7 @@ Route::get('/cadastroPrescritor', function () {
 Route::get('/login', function() {
     return view('auth.login');
 });
+
+Route::get('/user/dashboard', function() {
+    return view('user.dashboard');
+});
