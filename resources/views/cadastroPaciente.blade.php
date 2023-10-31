@@ -2,494 +2,372 @@
 <html>
 
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
-@vite('resources/css/app.css')
-@vite('resources/js/app.js')
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    @vite('resources/css/app.css')
+    @vite('resources/js/app.js')
 </head>
+
 <body>
-<header>
-    <!-- Navigation bar -->
-    <nav class="relative flex w-full items-center justify-between bg-white py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-start"
-        data-te-navbar-ref>
-        <div class="flex w-full flex-wrap items-center justify-between px-3">
-            <div class="flex items-center">
-                <!-- Hamburger menu button -->
-                <button
-                    class="border-0 bg-transparent px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
-                    type="button" data-te-collapse-init data-te-target="#navbarSupportedContentY"
-                    aria-controls="navbarSupportedContentY" aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- Hamburger menu icon -->
-                    <span class="[&>svg]:w-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="h-7 w-7">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                    </span>
-                </button>
-            </div>
 
-            <!-- Navigation links -->
-            <div class="!visible hidden grow basis-[100%] items-center lg:!flex lg:basis-auto"
-                id="navbarSupportedContentY" data-te-collapse-item>
-                <ul class="mr-auto flex flex-col lg:flex-row" data-te-navbar-nav-ref>
-                    <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                        <a class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                            href="#!" data-te-nav-link-ref data-te-ripple-init
-                            data-te-ripple-color="light">Home</a>
-                    </li>
-                    <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                        <a class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                            href="#!" data-te-nav-link-ref data-te-ripple-init
-                            data-te-ripple-color="light">Features</a>
-                    </li>
-                    <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                        <a class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                            href="#!" data-te-nav-link-ref data-te-ripple-init
-                            data-te-ripple-color="light">Pricing</a>
-                    </li>
-                    <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                        <a class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                            href="#!" data-te-nav-link-ref data-te-ripple-init
-                            data-te-ripple-color="light">About</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-<!--
-This example requires some changes to your config:
-
-```
-// tailwind.config.js
-module.exports = {
-// ...
-plugins: [
-// ...
-require('@tailwindcss/forms'),
-],
-}
-```
--->
-<div class style>
     <div class="bg-white">
         <div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
-            <div class="mx-auto max-w-2xl"> 
-                <form>
-                <div class="space-y-12">
-                    <div class="border-b border-gray-900/10 pb-12"> 
-                        <h2 class="text-base font-semibold leading-7 text-gray-900">Selecione um tipo de associado para prosseguir o cadastro</h2>
-                        
-                        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-                        <div class="sm:col-span-4">
-                        <label for="comoConheceu" class="block text-sm font-medium leading-6 text-gray-900">Tipo de Associado</label>
-                        <div class="mt-2">
-                            <select id="comoConheceu" name="comoConheceu" autocomplete="comoConheceu-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
-                            <option>...</option>
-                            <option>Paciente</option>
-                            <option>Associado Estrangeiro</option>
-                            <option>Prescritores</option>
-                            <option>Responsável pelo paciente</option>
-                            <option>Tutor de animal</option>
-                            </select>
-                        </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="border-b border-gray-900/10 pb-12">
-                    <h2 class="text-base font-semibold leading-7 text-gray-900">Acesso do associado</h2>
-                    <p class="mt-1 text-sm leading-6 text-gray-600">Essas informações serão exibidas publicamente, então tome cuidado com o que você compartilha.</p>
+            <div class="mx-auto max-w-2xl">
+                <form enctype="multipart/form-data" action="{{ route('cadastro.paciente.store') }}" method="POST">
+                    @csrf
+                    <div class="space-y-12">
+                        {{-- Informações Pessoais --}}
+                        <div class="border-b border-gray-900/10 pb-12">
+                            <h1 class="text-xl font-semibold leading-7 text-gray-900">Informações pessoais</h1>
+                            <p class="mt-1 text-sm leading-6 text-gray-600">
+                                As informações abaixo servirão para entendermos mais sobre você
+                            </p>
+                            <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 
-                    <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-                        <div class="sm:col-span-3">
-                        <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Nome de Usuario</label>
-                        <div class="mt-2">
-                            <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
-                            <input type="text" name="username" id="username" autocomplete="username" class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="janesmith">
+                                <div class="relative mb-4 sm:col-span-6">
+                                    <input required type="text" name="nomeCompleto"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="nomeCompletoInput" placeholder="Nome completo" />
+                                    <label for="nomeCompletoInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Nome completo
+                                    </label>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <input type="text" name="nomeSocial"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="nomeSocialInput" placeholder="Nome social" />
+                                    <label for="nomeSocialInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Nome social
+                                    </label>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <input required type="text" name="cpf"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="cpfInput" placeholder="Número do CPF" />
+                                    <label for="cpfInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Número do CPF
+                                    </label>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-2">
+                                    <input type="text" name="numeroRegistroGeral"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="numeroRegistroGeralInput" placeholder="Número do RG" />
+                                    <label for="numeroRegistroGeralInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Número do RG
+                                    </label>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-2">
+                                    <input type="text" name="nomeExpedidorRegistroGeral"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="nomeExpedidorRegistroGeralInput" placeholder="Órgão expedidor" />
+                                    <label for="nomeExpedidorRegistroGeralInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Órgão expedidor
+                                    </label>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-2">
+                                    <select
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light"
+                                        name="unidadeFederativaRegistroGeral" id="unidadeFederativaRegistroGeralSelect">
+                                        <option hidden selected value="">Selecione um estado</option>
+                                        @foreach ($unidadeFederativas as $key => $unidadeFederativa)
+                                            <option value="{{ $key }}">{{ $unidadeFederativa }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-6">
+                                    <label for="arquivoRegistroGeralInput"
+                                        class="mb-2 inline-block text-neutral-700 dark:text-neutral-200">
+                                        Documento de identificação com foto
+                                    </label>
+                                    <input accept="application/pdf" name="arquivoRegistroGeral"
+                                        class="relative m-0 block w-full min-w-0 flex-auto cursor-pointer rounded border border-solid border-neutral-300 bg-clip-padding px-3 py-[0.32rem] font-normal leading-[2.15] text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:cursor-pointer file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:file:bg-neutral-700 dark:file:text-neutral-100 dark:focus:border-primary"
+                                        id="arquivoRegistroGeralInput" type="file" />
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <select required
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light"
+                                        name="genero" id="generoSelect">
+                                        <option hidden selected value="">Selecione um gênero</option>
+                                        @foreach ($generos as $key => $genero)
+                                            <option value="{{ $key }}">{{ $genero }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <select required
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light"
+                                        name="estadoCivil" id="estadoCivilSelect">
+                                        <option hidden selected value="">Selecione um estado civil</option>
+                                        @foreach ($estadosCivis as $key => $estadoCivil)
+                                            <option value="{{ $key }}">{{ $estadoCivil }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-3" data-te-datepicker-init>
+                                    <input required type="text" name="dataNascimento"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="dataNascimentoInput" placeholder="Data de nascimento" />
+                                    <label for="dataNascimentoInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Data de nascimento
+                                    </label>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <select
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light"
+                                        name="unidadeFederativaNascimento" id="unidadeFederativaNascimentoSelect">
+                                        <option hidden selected value="">Selecione o estado de nascimento</option>
+                                        @foreach ($unidadeFederativas as $key => $unidadeFederativa)
+                                            <option value="{{ $key }}">{{ $unidadeFederativa }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <input required type="text" name="cidadeNascimento"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="cidadeNascimentoInput" placeholder="Cidade de nascimento" />
+                                    <label for="cidadeNascimentoInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Cidade de nascimento
+                                    </label>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <input required type="text" name="profissao"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="profissaoInput" placeholder="Profissão atual" />
+                                    <label for="profissaoInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Profissão atual
+                                    </label>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <input type="text" name="planoSaude"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="planoSaudeInput" placeholder="Plano de saúde" />
+                                    <label for="planoSaudeInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Plano de saúde
+                                    </label>
+                                </div>
+
                             </div>
                         </div>
-                        </div>
+                        {{-- Informações sobre a patologia --}}
+                        <div class="border-b border-gray-900/10 pb-12">
+                            <h1 class="text-xl font-semibold leading-7 text-gray-900">Informações sobre a patologia
+                            </h1>
+                            <p class="mt-1 text-sm leading-6 text-gray-600">
+                                As informções abaixo descrevem o tipo de doença que possui e nos ajuda a entender como
+                                podemos te ajudar.
+                            </p>
+                            <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 
-                        <div class="sm:col-span-3">
-                        <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Senha</label>
-                        <div class="mt-2">
-                            <input type="password" name="password" id="password" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                        </div>
-                        </div>
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <input required type="text" name="codigoInternacional"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="codigoInternacionalInput" placeholder="CID da patologia" />
+                                    <label for="codigoInternacionalInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        CID da patologia
+                                    </label>
+                                </div>
 
-                        <div class="sm:col-span-3">
-                        <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Confirmar senha</label>
-                        <div class="mt-2">
-                            <input type="password" name="password" id="password" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                        </div>
-                        </div>
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <input required type="text" name="anoDiagnostico"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="anoDiagnosticoInput" placeholder="Ano de diagnóstico" />
+                                    <label for="anoDiagnosticoInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Ano de diagnóstico
+                                    </label>
+                                </div>
 
-                        <!-- <div class="col-span-full"> Usar na parte de sintomas--> 
-                        <!-- <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Como conheceu a associação</label> -->
-                        <!-- <div class="mt-2">
-                            <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
-                        </div>
-                        <p class="mt-3 text-sm leading-6 text-gray-600">Write a few sentences about yourself.</p> -->
-                        <!-- </div> -->
+                                <div class="relative mb-4 sm:col-span-6">
+                                    <textarea required name="sintomas" id="sintomasInput"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"></textarea>
+                                    <label for="sintomasInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Sintomas da patologia
+                                    </label>
+                                </div>
 
-                        <div class="sm:col-span-3">
-                        <label for="comoConheceu" class="block text-sm font-medium leading-6 text-gray-900">Como conheceu a associação</label>
-                        <div class="mt-2">
-                            <select id="comoConheceu" name="comoConheceu" autocomplete="comoConheceu-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
-                            <option>...</option>
-                            <option>Indicação de outro paciente</option>
-                            <option>Médico(a)</option>
-                            <option>Mídias Sociais</option>
-                            <option>Outros canais</option>
-                            <option>Sites de busca (Ex.: Google)</option>
-                            <option>Youtube</option>
-                            </select>
-                        </div>
-                        </div>
-
-                        <div class="col-span-full">
-                        <label for="photo" class="block text-sm font-medium leading-6 text-gray-900">Photo</label>
-                        <div class="mt-2 flex items-center gap-x-3">
-                            <svg class="h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
-                            </svg>
-                            <button type="button" class="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Change</button>
-                        </div>
-                        </div>
-
-                        <div class="col-span-full">
-                        <label for="cover-photo" class="block text-sm font-medium leading-6 text-gray-900">Cover photo</label>
-                        <div class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
-                            <div class="text-center">
-                            <svg class="mx-auto h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z" clip-rule="evenodd" />
-                            </svg>
-                            <div class="mt-4 flex text-sm leading-6 text-gray-600">
-                                <label for="file-upload" class="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
-                                <span>Upload a file</span>
-                                <input id="file-upload" name="file-upload" type="file" class="sr-only">
-                                </label>
-                                <p class="pl-1">or drag and drop</p>
-                            </div>
-                            <p class="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
                             </div>
                         </div>
-                        </div>
-                    </div>
-                    </div>
+                        {{-- Documentos médicos --}}
+                        <div class="border-b border-gray-900/10 pb-12">
+                            <h1 class="text-xl font-semibold leading-7 text-gray-900">Documentos médicos</h1>
+                            <p class="mt-1 text-sm leading-6 text-gray-600">
+                                As informções abaixo serão usadas para validar e compreender seu estado como paciente.
+                            </p>
+                            <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 
-                    <div class="border-b border-gray-900/10 pb-12">
-                    <h2 class="text-base font-semibold leading-7 text-gray-900">Informações do paciente</h2>
-                    <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                                <div class="relative mb-4 sm:col-span-6">
+                                    <label for="arquivoLaudoInput"
+                                        class="mb-2 inline-block text-neutral-700 dark:text-neutral-200">
+                                        Laúdo Médico
+                                    </label>
+                                    <input name="arquivoLaudo" accept="application/pdf"
+                                        class="relative m-0 block w-full min-w-0 flex-auto cursor-pointer rounded border border-solid border-neutral-300 bg-clip-padding px-3 py-[0.32rem] font-normal leading-[2.15] text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:cursor-pointer file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:file:bg-neutral-700 dark:file:text-neutral-100 dark:focus:border-primary"
+                                        id="arquivoLaudoInput" type="file" />
+                                </div>
 
-                    <div class="sm:col-span-3">
-                    <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Nome social</label>
-                    <div class="mt-2">
-                        <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                    </div>
-                    </div>
+                                <div class="relative mb-4 sm:col-span-6">
+                                    <label for="arquivoReceitaInput"
+                                        class="mb-2 inline-block text-neutral-700 dark:text-neutral-200">
+                                        Receita Médico
+                                    </label>
+                                    <input name="arquivoReceita" accept="application/pdf"
+                                        class="relative m-0 block w-full min-w-0 flex-auto cursor-pointer rounded border border-solid border-neutral-300 bg-clip-padding px-3 py-[0.32rem] font-normal leading-[2.15] text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:cursor-pointer file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:file:bg-neutral-700 dark:file:text-neutral-100 dark:focus:border-primary"
+                                        id="arquivoReceitaInput" type="file" />
+                                </div>
 
-                    <div class="sm:col-span-3">
-                    <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Nome do paciente</label>
-                    <div class="mt-2">
-                        <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                    </div>
-                    </div>
-
-                    <div class="sm:col-span-3">
-                    <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Nome do médico</label>
-                    <div class="mt-2">
-                        <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                    </div>
-                    </div>
-
-                    <div class="sm:col-span-3">
-                    <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">CRM/UF</label>
-                    <div class="mt-2">
-                        <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                    </div>
-                    </div>
-                    </div>
-
-
-                    </div>
-
-                    <div class="border-b border-gray-900/10 pb-12">
-                    <h2 class="text-base font-semibold leading-7 text-gray-900">Informações pessoais</h2>
-                    <p class="mt-1 text-sm leading-6 text-gray-600">Use a permanent address where you can receive mail.</p>
-
-                    <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-
-                    <div class="col-span-full">
-                        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Endereço de email</label>
-                        <div class="mt-2">
-                            <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                        </div>
-                        </div>
-
-                        <div class="sm:col-span-3">
-                        <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">CPF</label>
-                        <div class="mt-2">
-                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                        </div>
-                        </div>
-
-                        <div class="sm:col-span-3">
-                        <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">RG</label>
-                        <div class="mt-2">
-                            <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                        </div>
-                        </div>
-
-                        <div class="sm:col-span-3">
-                        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Orgão Expedidor</label>
-                        <div class="mt-2">
-                            <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                        </div>
-                        </div>
-
-                        <div class="sm:col-span-3">
-                        <label for="country" class="block text-sm font-medium leading-6 text-gray-900">Orgão Expedidor UF</label>
-                        
-                        <div class="mt-2">
-                            <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
-                            <option>United States</option>
-                            <option>Canada</option>
-                            <option>Mexico</option>
-                            </select>
-                        </div>
-                        </div>
-                        
-                        <div class="sm:col-span-3">
-                        <label for="country" class="block text-sm font-medium leading-6 text-gray-900">Gênero do Responsável</label>
-                        
-                        <div class="mt-2">
-                            <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
-                            <option>United States</option>
-                            <option>Canada</option>
-                            <option>Mexico</option>
-                            </select>
-                        </div>
-                        </div>
-                        
-                        <div class="sm:col-span-3">
-                        <label for="country" class="block text-sm font-medium leading-6 text-gray-900">Estado Civil</label>
-                        
-                        <div class="mt-2">
-                            <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
-                            <option>United States</option>
-                            <option>Canada</option>
-                            <option>Mexico</option>
-                            </select>
-                        </div>
-                        </div>
-
-                        <div class="sm:col-span-3">
-                        <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Data de Nascimento</label>
-                        <div class="mt-2">
-                            <input type="date" name="street-address" id="street-address" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                        </div>
-                        </div>
-
-                        <div class="sm:col-span-3">
-                        <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">UF de Nascimento</label>
-                        <div class="mt-2">
-                            <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                        </div>
-                        </div>
-                        
-                        <div class="sm:col-span-3">
-                        <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Cidade de Nascimento</label>
-                        <div class="mt-2">
-                            <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                        </div>
-                        </div>
-                        
-                        <div class="sm:col-span-3">
-                        <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Profissão</label>
-                        <div class="mt-2">
-                            <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                        </div>
-                        </div>
-
-                        <div class="col-span-full">
-                        <label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">Qual o plano de saúde?</label>
-                        <div class="mt-2">
-                            <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="border-b border-gray-900/10 pb-12"> 
-                        <h2 class="text-base font-semibold leading-7 text-gray-900">Informações sobre a patologia</h2>
-                        
-                        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-                                    <div class="sm:col-span-3">
-                                     <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">CID da Patologia</label>
-                                        <div class="mt-2">
-                                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="sm:col-span-3">
-                                     <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Ano do diagnóstico</label>
-                                        <div class="mt-2">
-                                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-span-full"> 
-                                    <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Sintomas</label>
-                                    <div class="mt-2">
-                                        <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
-                                    </div>
-                                    </div>
-
-                         </div>
-                    </div>
-                    
-                    
-                    <div class="border-b border-gray-900/10 pb-12"> 
-                        <h2 class="text-base font-semibold leading-7 text-gray-900">Documentação</h2>
-                        
-                        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-                                    <div class="sm:col-span-3">
-                                     <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Receita Médica</label>
-                                        <div class="mt-2">
-                                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="sm:col-span-3">
-                                     <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Laudo Médico</label>
-                                        <div class="mt-2">
-                                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                                        </div>
-                                    </div>
-
-                                    <div class="sm:col-span-3">
-                                     <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Documento de Identificação</label>
-                                        <div class="mt-2">
-                                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                                        </div>
-                                    </div>
-                         </div>
-                    </div>
-                    
-                    <div class="border-b border-gray-900/10 pb-12"> 
-                        <h2 class="text-base font-semibold leading-7 text-gray-900">Telefones</h2>
-                        
-                        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-                                    <div class="sm:col-span-3">
-                                     <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Telefone Residencial</label>
-                                        <div class="mt-2">
-                                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="sm:col-span-3">
-                                     <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Telefone móvel</label>
-                                        <div class="mt-2">
-                                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                                        </div>
-                                    </div>
-                         </div>
-                    </div>
-
-                    <div class="border-b border-gray-900/10 pb-12"> 
-                        <h2 class="text-base font-semibold leading-7 text-gray-900">Emails</h2>
-                        
-                        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-                                    <div class="sm:col-span-3">
-                                     <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Email Principal</label>
-                                        <div class="mt-2">
-                                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="sm:col-span-3">
-                                     <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Email Alternativo</label>
-                                        <div class="mt-2">
-                                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                                        </div>
-                                    </div>
-                         </div>
-                    </div>
-
-                    <div class="border-b border-gray-900/10 pb-12">
-                    <h2 class="text-base font-semibold leading-7 text-gray-900">Notifications</h2>
-                    <p class="mt-1 text-sm leading-6 text-gray-600">We'll always let you know about important changes, but you pick what else you want to hear about.</p>
-
-                    <div class="mt-10 space-y-10">
-                        <fieldset>
-                        <legend class="text-sm font-semibold leading-6 text-gray-900">By Email</legend>
-                        <div class="mt-6 space-y-6">
-                            <div class="relative flex gap-x-3">
-                            <div class="flex h-6 items-center">
-                                <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                            </div>
-                            <div class="text-sm leading-6">
-                                <label for="comments" class="font-medium text-gray-900">Comments</label>
-                                <p class="text-gray-500">Get notified when someones posts a comment on a posting.</p>
-                            </div>
-                            </div>
-                            <div class="relative flex gap-x-3">
-                            <div class="flex h-6 items-center">
-                                <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                            </div>
-                            <div class="text-sm leading-6">
-                                <label for="candidates" class="font-medium text-gray-900">Candidates</label>
-                                <p class="text-gray-500">Get notified when a candidate applies for a job.</p>
-                            </div>
-                            </div>
-                            <div class="relative flex gap-x-3">
-                            <div class="flex h-6 items-center">
-                                <input id="offers" name="offers" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                            </div>
-                            <div class="text-sm leading-6">
-                                <label for="offers" class="font-medium text-gray-900">Offers</label>
-                                <p class="text-gray-500">Get notified when a candidate accepts or rejects an offer.</p>
-                            </div>
                             </div>
                         </div>
-                        </fieldset>
-                        <fieldset>
-                        <legend class="text-sm font-semibold leading-6 text-gray-900">Push Notifications</legend>
-                        <p class="mt-1 text-sm leading-6 text-gray-600">These are delivered via SMS to your mobile phone.</p>
-                        <div class="mt-6 space-y-6">
-                            <div class="flex items-center gap-x-3">
-                            <input id="push-everything" name="push-notifications" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                            <label for="push-everything" class="block text-sm font-medium leading-6 text-gray-900">Everything</label>
-                            </div>
-                            <div class="flex items-center gap-x-3">
-                            <input id="push-email" name="push-notifications" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                            <label for="push-email" class="block text-sm font-medium leading-6 text-gray-900">Same as email</label>
-                            </div>
-                            <div class="flex items-center gap-x-3">
-                            <input id="push-nothing" name="push-notifications" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
-                            <label for="push-nothing" class="block text-sm font-medium leading-6 text-gray-900">No push notifications</label>
+                        {{-- Informações de endereço --}}
+                        <div class="border-b border-gray-900/10 pb-12">
+                            <h1 class="text-xl font-semibold leading-7 text-gray-900">Endereço residencial</h1>
+                            <p class="mt-1 text-sm leading-6 text-gray-600">
+                                As informções abaixo serão usadas para encontrar você.
+                            </p>
+                            <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <input required type="text" name="anoDiagnostico"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="cepInput" placeholder="CEP" />
+                                    <label for="cepInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        CEP
+                                    </label>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <input required type="text" name="logradouro"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="logradouroInput" placeholder="Logradouro" />
+                                    <label for="logradouroInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Logradouro
+                                    </label>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <input required type="text" name="bairro"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="bairroInput" placeholder="Bairro" />
+                                    <label for="bairroInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Bairro
+                                    </label>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <input required type="text" name="numero"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="numeroInput" placeholder="Número" />
+                                    <label for="numeroInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Número
+                                    </label>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <select
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light"
+                                        name="unidadeFederativa" id="unidadeFederativaSelect">
+                                        <option hidden selected value="">Selecione o estado do endereço</option>
+                                        @foreach ($unidadeFederativas as $key => $unidadeFederativa)
+                                            <option value="{{ $key }}">{{ $unidadeFederativa }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <input required type="text" name="cidade"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="cidadeInput" placeholder="Cidade" />
+                                    <label for="cidadeInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Cidade
+                                    </label>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-6">
+                                    <input type="text" name="complemento"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="complementoInput" placeholder="Complemento" />
+                                    <label for="complementoInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Complemento
+                                    </label>
+                                </div>
+
                             </div>
                         </div>
-                        </fieldset>
-                    </div>
-                    </div>
-                </div>
+                        {{-- Informações de Login --}}
+                        <div class="border-b border-gray-900/10 pb-12">
+                            <h1 class="text-xl font-semibold leading-7 text-gray-900">Informações de login</h1>
+                            <p class="mt-1 text-sm leading-6 text-gray-600">
+                                As informções abaixo serão usadas para realizar login no sistema.
+                            </p>
+                            <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 
-                <div class="mt-6 flex items-center justify-end gap-x-6">
-                    <button type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
-                    <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
-                </div>
+                                <div class="relative mb-4 sm:col-span-6">
+                                    <input required type="email" name="email"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="emailInput" placeholder="Email" />
+                                    <label for="emailInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Email
+                                    </label>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <input required type="password" name="confirmaSenha"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="senhaInput" placeholder="Senha" />
+                                    <label for="senhaInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Senha
+                                    </label>
+                                </div>
+
+                                <div class="relative mb-4 sm:col-span-3">
+                                    <input required type="password"
+                                        class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                                        id="confiirmaSenhaInput" placeholder="Confirme sua senha" />
+                                    <label for="confiirmaSenhaInput"
+                                        class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                        Confirme sua senha
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit">Enviar</button>
                 </form>
             </div>
         </div>
     </div>
-</div>
-
 
 </body>
 
