@@ -36,3 +36,7 @@ Route::get('/user/dashboard', function() {
 Route::get('/user/profile/edit', function() {
     return view('user.profileEdit');
 });
+
+Route::get('/user/profile/edit2', function() {
+    return view('user.profileEdit2');
+});
