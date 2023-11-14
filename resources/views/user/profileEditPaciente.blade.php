@@ -20,7 +20,7 @@
                     <button
                         class="inline-block rounded text-xs font-medium uppercase leading-tight text-neutral-900 shadow-md transition duration-150 ease-in-out hover:bg-gradient-to-l from-[#B0F291] to-[#04BF68] hover:opacity-30  hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 active:white active:shadow-lg">
                         <span class="flex text-neutral-500 hover:text-white text-xl font-extrabold cursor-pointer"
-                            onclick="Open()">
+                            onclick="Button()">
                             <i class="bi bi-filter-left px-1 rounded-md"></i>
                         </span>
                     </button>
@@ -99,7 +99,7 @@
                 </div>
             </div>
 
-            <div class="px-8 py-6 col-start-2 col-span-7">
+            <div class="px-8 py-6 col-start-2 col-span-7" onclick="Close()">
                 <div id="access" class="lg:pl-10 lg:py-5">
                     <div class="text-gray-900 text-2xl font-bold pb-4">
                         <h1>Informações de Acesso</h1>
@@ -597,8 +597,12 @@
 
 
     <script>
-        function Open() {
+        function Button() {
             document.querySelector('.sidebar').classList.toggle('left-[-300px]')
+        }
+        
+        function Close(){
+            document.querySelector('.sidebar').classList.add('left-[-300px]')
         }
 
         function EnableAccess() {
