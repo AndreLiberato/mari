@@ -33,6 +33,10 @@ Route::get('/user/dashboard', function() {
     return view('user.dashboard');
 });
 
+Route::get('/admin/dashboard', function() {
+    return view('admin.dashboard');
+});
+
 Route::get('/user/profile/edit', function() {
     return view('user.profileEditPaciente');
 });
