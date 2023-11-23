@@ -40,7 +40,7 @@ Route::get('/user/contact', function() {
 Route::get('/user/quemSomos', function() {
     return view('user.quemSomos');
 });
-=======
+
 Route::get('/user/dashboard/prescritor', function() {
     return view('user.dashboardPrescritor');
 });
