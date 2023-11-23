@@ -9,6 +9,7 @@
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
 </head>
+
 <body>
     <header>
         <nav id="navbar" class="fixed flex flex-wrap items-center justify-between w-full h-12 lg:h-20 bg-[#FBFBFB] text-neutral-500 shadow-lg dark:bg-neutral-600" data-te-navbar-ref>
