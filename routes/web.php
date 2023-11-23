@@ -33,6 +33,10 @@ Route::get('/user/dashboard', function() {
     return view('user.dashboard');
 });
 
+Route::get('/user/dashboard/prescritor', function() {
+    return view('user.dashboardPrescritor');
+});
+
 Route::get('/admin/dashboard', function() {
     return view('admin.dashboard');
 });
