@@ -1,289 +1,160 @@
+<!doctype html> <html> <head> <meta charset="UTF-8"> <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script> <script type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> <script nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+@vite('resources/css/novo.css') @vite('resources/js/app.js')
+</head>
 
-<!doctype html>
-  <html>
+<body class="bg-gradient-to-r from-green-400 via-teal-500 to-emerald-600">
+  <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center ">
+      <span class="text-2xl font-[Poppins] cursor-pointer">
+        <img class="h-10 inline" src="http://localhost:8000/img/logo_marijuana.png" alt="logo_marijuana">
+      </span>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
-    @vite('resources/css/app.css') @vite('resources/js/app.js')
-  </head>
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="menu(this)"></ion-icon>
+      </span>
+    </div>
 
-  <body>
-    <header>
-      <!-- Navigation bar -->
-      <nav
-        class="relative flex w-screen items-center justify-between bg-white py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-start"
-        data-te-navbar-ref style="background: linear-gradient(to right, #B0F291, #04BF68)">
-        <div class="flex w-full flex-wrap items-center justify-between px-3">
-          <div class="flex items-center">
-            <div class="text-center py-4">
-              <img class="w-48 pt-15 navbar-logo" src="http://localhost:8000/img/logo_marijuana.png" alt="logo_marijuana">
-              <h4 class="mb53 mt2 pb0 text-xl font-semibold">
-                Marijuana
-              </h4>
-              <!-- Ajuste as classes de tamanho (h-16 e w-16) conforme necessário -->
-            </div>
-            <!-- Hamburger menu button -->
-            <button
-              class="border-0 bg-transparent px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
-              type="button" data-te-collapse-init data-te-target="#navbarSupportedContentY"
-              aria-controls="navbarSupportedContentY" aria-expanded="false" aria-label="Toggle navigation">
-              <!-- Hamburger menu icon -->
-              <span class="[&>svg]:w-5">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="h-7 w-7">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-              </span>
-            </button>
-          </div>
+    <ul 
+      class="meuMenu md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl hover:text-green-400 duration-500">QUEM SOMOS</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl hover:text-green-400 duration-500">NOTÍCIAS</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl hover:text-green-400 duration-500">ASSOCIE-SE</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="/user/contact" class="text-xl hover:text-green-400 duration-500">CONTATO</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl hover:text-green-400 duration-500">PERGUNTAS</a>
+      </li>
 
-          <!-- Navigation links -->
-          <div class="mx-auto text-center">
-            <div class="!visible hidden grow basis-[100%] items-center lg:!flex lg:basis-auto"
-              id="navbarSupportedContentY" data-te-collapse-item>
-              <ul class="mr-auto flex flex-col lg:flex-row" data-te-navbar-nav-ref>
-                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                  <a class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                    href="#!" data-te-nav-link-ref data-te-ripple-init data-te-ripple-color="light">QUEM SOMOS</a>
-                </li>
-                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                  <a class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                    href="#!" data-te-nav-link-ref data-te-ripple-init data-te-ripple-color="light">RECURSOS</a>
-                </li>
-                <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                  <a class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                    href="#!" data-te-nav-link-ref data-te-ripple-init data-te-ripple-color="light">FALE CONOSCO</a>
-                </li>
-                <li class="mb-2 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                  <a class="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                    href="#!" data-te-nav-link-ref data-te-ripple-init data-te-ripple-color="light">PERGUNTAS FREQUENTES</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-        </nav>
-    </header>
-
-
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
-
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade ">
-        <div class="numbertext">1 / 3</div>
-        <img src="img/homepage" style="width:100%">
-        <div class="text">Caption Text</div>
+      <button
+        class="bg-gradient-to-r from-green-400 via-teal-500 to-emerald-600 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-gradient-to-r hover:from-green-500 hover:via-teal-600 hover:to-emerald-700 rounded">
+        Acesso a Plataforma Marijuana
+      </button>
+      <h2 class=""></h2>
+    </ul>
+  </nav>
+  <section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+        <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Marijuana</h2>
+        <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Bem-vindo à nossa plataforma dedicada à cannabis medicinal! Aqui, oferecemos informações confiáveis, apoio e uma comunidade acolhedora para aqueles interessados nos benefícios terapêuticos da cannabis. Seja paciente, profissional de saúde ou defensor, junte-se a nós para explorar avanços, desafios e histórias inspiradoras sobre o uso medicinal da cannabis.</p>
       </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="img/Cannabis-Medicinal.jpg" style="width:100%">
-        <div class="text">Caption Two</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="https://amame.org.br/wp-content/uploads/2016/09/Imagem-Banner.jpg" style="width:100%">
-        <div class="text">Caption Three</div>
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <!-- The dots/circles -->
-    <div style="text-align:center" style="background-color: #d0e8d0">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-<section>
-
-<div class="row-line">
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <img class="rounded-t-lg" src="img/pesquisa.jpg" alt="" />
-    </a>
-    <div class="p-5">
-        <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-        </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Descubra os benefícios da cannabis medicinal e como a nossa plataforma pode ajudar você</p>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Read more
-             <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </a>
-    </div>
-</div>
-
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <img class="rounded-t-lg" src="img/Quimica.jpg" alt="" />
-    </a>
-    <div class="p-5">
-        <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-        </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Read more
-             <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </a>
-    </div>
-</div>
-
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <img class="rounded-t-lg" src="img/medical.png" alt="" />
-    </a>
-    <div class="p-5">
-        <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-        </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Read more
-             <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </a>
-    </div>
-</div>
-</div>
-
-
-
-</section>
-
-      <!-- Main container div: holds the entire content of the footer, including four sections (Tailwind Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
-      <div class="mx-6 py-10 text-center md:text-left">
-        <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          <!-- Tailwind Elements section -->
-          <div class="">
-            <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-3 h-4 w-4">
+      <div class="grid gap-8 lg:grid-cols-2">
+        <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex justify-between items-center mb-5 text-gray-500">
+            <span
+              class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+              <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
+                  d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z">
+                </path>
               </svg>
-              Tailwind ELEMENTS
-            </h6>
-            <p>
-              Here you can use rows and columns to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
-            </p>
+              Curiosidade
+            </span>
+            <span class="text-sm">14 de agosto</span>
           </div>
-          <!-- Products section -->
-          <div class="">
-            <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-              Products
-            </h6>
-            <p class="mb-4">
-              <a href="#!" class="text-neutral-600 dark:text-neutral-200">Angular</a>
-            </p>
-            <p class="mb-4">
-              <a href="#!" class="text-neutral-600 dark:text-neutral-200">React</a>
-            </p>
-            <p class="mb-4">
-              <a href="#!" class="text-neutral-600 dark:text-neutral-200">Vue</a>
-            </p>
-            <p>
-              <a href="#!" class="text-neutral-600 dark:text-neutral-200">Laravel</a>
-            </p>
+          <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">O sobrevivente do Holocausto que descobriu o THC, principal psicoativo da maconha</a></h2>
+          <p class="mb-5 font-light text-gray-500 dark:text-gray-400">O caminho para entender o funcionamento bioquímico da maconha e suas propriedades medicinais foi aberto por um cientista israelense que sobreviveu ao Holocausto.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+              <img class="w-7 h-7 rounded-full"
+                src="https://ichef.bbci.co.uk/news/645/cpsprodpb/ce1a/live/611f0e90-c1da-11ed-8664-a98fcb0c4a5a.jpg"
+                alt="Jese Leos avatar" />
+              <span class="font-medium dark:text-white">
+              Raphael Mechoulam
+              </span>
+            </div>
+            <a href="#"
+              class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+              Leia mais
+              <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
           </div>
-          <!-- Useful links section -->
-          <div class="">
-            <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-              Useful links
-            </h6>
-            <p class="mb-4">
-              <a href="#!" class="text-neutral-600 dark:text-neutral-200">Pricing</a>
-            </p>
-            <p class="mb-4">
-              <a href="#!" class="text-neutral-600 dark:text-neutral-200">Settings</a>
-            </p>
-            <p class="mb-4">
-              <a href="#!" class="text-neutral-600 dark:text-neutral-200">Orders</a>
-            </p>
-            <p>
-              <a href="#!" class="text-neutral-600 dark:text-neutral-200">Help</a>
-            </p>
+        </article>
+        <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex justify-between items-center mb-5 text-gray-500">
+            <span
+              class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+              <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z"
+                  clip-rule="evenodd"></path>
+                <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path>
+              </svg>
+              Notícias
+            </span>
+            <span class="text-sm">14 de agosto</span>
           </div>
-          <!-- Contact section -->
-          <div>
-            <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-              Contact
-            </h6>
-            <p class="mb-4 flex items-center justify-center md:justify-start">
-              <x-icon name="map-pin" solid />
-              New York, NY 10012, US
-            </p>
-            <p class="mb-4 flex items-center justify-center md:justify-start">
-              <x-icon name="inbox" solid />
-              info@example.com
-            </p>
-            <p class="mb-4 flex items-center justify-center md:justify-start">
-              <x-icon name="phone" solid />
-
-              + 01 234 567 88
-            </p>
-            <p class="flex items-center justify-center md:justify-start">
-              <x-icon name="printer" solid />
-              + 01 234 567 89
-            </p>
+          <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">Anvisa autoriza cultivo de cannabis para pesquisa na UFRN</a></h2>
+          <p class="mb-5 font-light text-gray-500 dark:text-gray-400">A Universidade Federal do Rio Grande do Norte (UFRN) é a primeira instituição do país a conquistar a 
+            liberação para cultivo controlado e processamento da planta cannabis para fins de pesquisa científica.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+              <img class="w-7 h-7 rounded-full"
+                src="https://www.ufrn.br/resources/documentos/identidadevisual/brasao/brasao_flat.png"
+                alt="Bonnie Green avatar" />
+              <span class="font-medium dark:text-white">
+              Williane Silva
+              </span>
+            </div>
+            <a href="#"
+              class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+              Leia mais
+              <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
           </div>
-        </div>
+        </article>
       </div>
-
-      <!--Copyright section-->
-      <div class="bg-green-500 p-6 text-center dark:bg-neutral-700">
-        <span>© 2023 Copyright:</span>
-        <a class="font-semibold text-neutral-600 dark:text-neutral-400" href="https://tailwind-elements.com/">Tailwind
-          Elements</a>
+    </div>
+  </section>
+  <div class="bg-white py-24 sm:py-32" >
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3 ">
+      <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+        <dt class="text-base leading-7 text-gray-600">Mais de 50 países ao redor do mundo legalizaram o uso medicinal da cannabis.</dt>
+        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">50 países</dd>
       </div>
-    </footer>
-  </body>
+      <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+        <dt class="text-base leading-7 text-gray-600">Nos Estados Unidos, mais de 30 estados legalizaram o uso medicinal da cannabis, e alguns também legalizaram o uso recreativo.</dt>
+        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">30 estados</dd>
+      </div>
+      <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+        <dt class="text-base leading-7 text-gray-600">Mercado de cannabis mundial deve crescer US$ 105 bilhões até 2026</dt>
+        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">105 bilhões</dd>
+      </div>
+    </dl>
+  </div>
+</div>
 
+  <footer>
+    <p>© 2023 Seu Nome. Todos os direitos reservados.</p>
+    <p>Entre em contato: contato@seudominio.com</p>
+  </footer>
   <script>
-    let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+            function menu(e) {
+                let list = document.querySelector('.meuMenu');
+                e.name === 'menu' ? (e.name = "close", list.classList.add('z-10'),list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu",list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+        }
   </script>
 
-  </html>
+</body>
+
+</html>

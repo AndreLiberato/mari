@@ -17,7 +17,7 @@
                     <div class="block rounded-lg bg-white shadow-lg dark:bg-neutral-800">
                         <div class="g-0 lg:flex lg:flex-wrap">
                             <div class="px-4 md:px-0 lg:w-6/12">
-                                <div class="md:mx-auto md:px-12 md:pb-12 md:w-5/6">
+                                <div class="md:mx-auto md:px-12 md:pb-12 md:w-5/6"> 
                                     <div class="items-center flex flex-col">
                                         <img class="w-48 pt-12" src="{{ asset('img/logo_marijuana.png') }}"
                                             alt="logo_marijuana">
@@ -25,6 +25,7 @@
                                             Marijuana
                                         </h4>
                                     </div>
+                                    
 
                                     <form>
                                         <p class="mb-4">Informações de login</p>
