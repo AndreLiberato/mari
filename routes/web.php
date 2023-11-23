@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::get('/cadastro/paciente', [CadastroController::class, 'paciente'])->name('cadastro.paciente');
 Route::post('/cadastro/paciente/store', [CadastroController::class, 'store'])->name('cadastro.paciente.store');
