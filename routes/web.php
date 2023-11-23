@@ -32,3 +32,7 @@ Route::get('/login', function() {
 Route::get('/user/dashboard', function() {
     return view('user.dashboard');
 });
+
+Route::get('/user/profile', function() {
+    return view('user.profilePage');
+});
