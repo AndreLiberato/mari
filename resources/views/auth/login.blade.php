@@ -32,49 +32,47 @@
 
                                         <div class="relative mb-4">
                                             <input type="email"
-                                                class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
-                                                id="emailInput" placeholder="Endereço de Email" />
+                                                class="block rounded px-2.5 py-2.5 pt-5 w-full text-base text-gray-900 dark:bg-gray-700 border-2 border-neutral-600 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-app-green-light focus:outline-none focus:ring-0 focus:border-app-green-dark peer"
+                                                id="emailInput" placeholder="" />
                                             <label for="emailInput"
-                                                class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                                class="absolute text-base text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-[0.8] top-4 z-10 origin-[0] start-2.5 peer-focus:text-app-green-dark peer-focus:dark:text-app-green-light peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-90 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
                                                 Endereço de Email
                                             </label>
                                         </div>
 
                                         <div class="relative mb-4">
                                             <input type="password"
-                                                class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
-                                                id="passwordInput" placeholder="Senha" />
+                                                class="block rounded px-2.5 py-2.5 pt-5 w-full text-base text-gray-900 dark:bg-gray-700 border-2 border-neutral-600 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-app-green-light focus:outline-none focus:ring-0 focus:border-app-green-dark peer"
+                                                id="passwordInput" placeholder="" />
                                             <label for="passwordInput"
-                                                class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
+                                                class="absolute text-base text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-[0.8] top-4 z-10 origin-[0] start-2.5 peer-focus:text-app-green-dark peer-focus:dark:text-app-green-light peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-90 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
                                                 Senha
                                             </label>
                                         </div>
 
                                         <div class="mb-12 pb-1 pt-1 text-center">
-                                            <button
-                                                class="mb-3 inline-block w-full rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(0,0,0,0.2)] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)]"
-                                                type="button" data-te-ripple-init data-te-ripple-color="light"
-                                                style="background: linear-gradient(to right, #B0F291, #04BF68);">
+                                            <a class="mb-3 inline-block w-full rounded px-6 pb-2 pt-2.5 text-xs bg-gradient-to-r from-app-green-light to-app-green-medium font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(0,0,0,0.2)] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)]"
+                                                type="button" data-te-ripple-init data-te-ripple-color="light">
                                                 Entrar
-                                            </button>
+                                            </a>
 
                                             <a href="#!">Esqueceu a senha?</a>
                                         </div>
 
                                         <div class="flex items-center justify-between pb-6">
                                             <p class="mb-0 mr-2">Ainda não é associado?</p>
-                                            <button type="button"
+                                            <a href="{{ route('cadastro.paciente') }}"
                                                 class="inline-block rounded border-2 border-app-green-dark px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-app-green-dark transition duration-150 ease-in-out hover:bg-app-green-vivid hover:bg-opacity-10 focus:outline-none focus:ring-0 dark:border-app-green-light dark:text-app-green-light dark:hover:bg-app-green-dark dark:hover:bg-opacity-10"
                                                 data-te-ripple-init data-te-ripple-color="light">
                                                 Associe-se
-                                            </button>
+                                            </a>
                                         </div>
                                     </form>
                                 </div>
                             </div>
 
-                            <div class="flex items-center rounded-b-lg lg:w-6/12 lg:rounded-r-lg lg:rounded-bl-none"
-                                style="background: linear-gradient(to right, #B0F291, #04BF68)">
+                            <div
+                                class="flex items-center rounded-b-lg lg:w-6/12 lg:rounded-r-lg lg:rounded-bl-none bg-gradient-to-r from-app-green-light to-app-green-medium">
                                 <div class="px-4 py-6 text-white md:mx-6 md:p-12">
                                     <h4 class="mb-6 text-xl font-semibold text-black">
                                         Somos mais do que uma associação

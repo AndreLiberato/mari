@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\CadastroController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,11 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
-Route::get('/cadastroPaciente', function () {
-    return view('cadastroPaciente');
-});
+Route::get('/cadastro/paciente', [CadastroController::class, 'paciente'])->name('cadastro.paciente');
+Route::post('/cadastro/paciente/store', [CadastroController::class, 'store'])->name('cadastro.paciente.store');
 
 Route::get('/cadastroPrescritor', function () {
     return view('cadastroPrescritor');
@@ -39,4 +39,24 @@ Route::get('/user/contact', function() {
 
 Route::get('/user/quemSomos', function() {
     return view('user.quemSomos');
+});
+=======
+Route::get('/user/dashboard/prescritor', function() {
+    return view('user.dashboardPrescritor');
+});
+
+Route::get('/admin/dashboard', function() {
+    return view('admin.dashboard');
+});
+
+Route::get('/user/pacient/profile/edit', function() {
+    return view('user.profileEditPaciente');
+});
+
+Route::get('/user/prescritor/profile/edit', function() {
+    return view('user.profileEditPrescritor');
+});
+
+Route::get('/user/profile', function() {
+    return view('user.profilePage');
 });
