@@ -9,7 +9,7 @@
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
 </head>
-<body onload="Dashboard()">
+<body>
     <header>
         <nav id="navbar" class="fixed flex flex-wrap items-center justify-between w-full h-12 lg:h-20 bg-[#FBFBFB] text-neutral-500 shadow-lg dark:bg-neutral-600" data-te-navbar-ref>
             <div id="navbar-content" class="flex w-full flex-wrap items-center justify-between py-2 lg:py-2 px-2 lg:px-4">
@@ -50,23 +50,23 @@
         <div id="grid" class="lg:grid lg:grid-cols-8">
             <div id="sidenav" class="fixed lg:static lg:col-start-1 lg:col-span-1 h-[calc(100vh-48px)] lg:h-[calc(100vh-80px)] lg:left-0 left-[-300px] bg-[#04BF68] shadow text-black font-medium">
                 <div class="pt-4"> 
-                    <div id="profile" class="px-5 py-2 flex lg:hidden items-center duration-300 cursor-pointer hover:bg-white hover:bg-opacity-70" onclick="EnableDashboard()">
+                    <div id="profile" class="px-5 py-2 flex lg:hidden items-center duration-300 cursor-pointer hover:bg-white hover:bg-opacity-70">
                         <i class="bi bi-person-circle"></i>
                         <span class="mx-2 my-[4px] text-sm text-black">Perfil</span>
                     </div>
-                    <div id="home" class="px-5 py-2 flex items-center duration-300 cursor-pointer hover:bg-white hover:bg-opacity-70" onclick="EnableDashboard()">
+                    <div id="home" class="px-5 py-2 flex items-center duration-300 cursor-pointer hover:bg-white hover:bg-opacity-70">
                         <i class="bi bi-bar-chart-fill"></i>
                         <span class="mx-2 my-[4px] text-sm text-black">Dashboard</span>
                     </div>
-                    <div id="search" class="px-5 py-2 flex items-center duration-300 cursor-pointer hover:bg-white hover:bg-opacity-70" onclick="EnableMedicalFiles()">
+                    <div id="search" class="px-5 py-2 flex items-center duration-300 cursor-pointer hover:bg-white hover:bg-opacity-70">
                         <i class="bi bi-search"></i>
                         <span class="mx-2 my-[4px] text-sm text-black">Consultar Associado</span>
                     </div>
-                    <div id="manage-people" class="px-5 py-2 flex items-center duration-300 cursor-pointer hover:bg-white hover:bg-opacity-70" onclick="EnableDocuments()">
+                    <div id="manage-people" class="px-5 py-2 flex items-center duration-300 cursor-pointer hover:bg-white hover:bg-opacity-70">
                         <i class="bi bi-person-lines-fill"></i>
                         <span class="mx-2 my-[4px] text-sm text-black">Gerenciar Associados</span>
                     </div>
-                    <div id="manage-organization" class="px-5 py-2 flex items-center duration-300 cursor-pointer hover:bg-white hover:bg-opacity-70" onclick="EnableDocuments()">
+                    <div id="manage-organization" class="px-5 py-2 flex items-center duration-300 cursor-pointer hover:bg-white hover:bg-opacity-70">
                         <i class="bi bi-ui-checks-grid"></i>
                         <span class="mx-2 my-[4px] text-sm text-black">Gerenciar Recursos</span>
                     </div>
