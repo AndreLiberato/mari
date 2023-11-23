@@ -49,6 +49,13 @@
         <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Marijuana</h2>
         <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Bem-vindo à nossa plataforma dedicada à cannabis medicinal! Aqui, oferecemos informações confiáveis, apoio e uma comunidade acolhedora para aqueles interessados nos benefícios terapêuticos da cannabis. Seja paciente, profissional de saúde ou defensor, junte-se a nós para explorar avanços, desafios e histórias inspiradoras sobre o uso medicinal da cannabis.</p>
       </div>
+      <div class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+        <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+            aria-hidden="true">
+            <div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-green-400 to-green-600 opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
+                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+            </div>
+        </div>
       <div class="grid gap-8 lg:grid-cols-2">
         <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
           <div class="flex justify-between items-center mb-5 text-gray-500">
@@ -63,6 +70,7 @@
             </span>
             <span class="text-sm">14 de agosto</span>
           </div>
+    
           <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">O sobrevivente do Holocausto que descobriu o THC, principal psicoativo da maconha</a></h2>
           <p class="mb-5 font-light text-gray-500 dark:text-gray-400">O caminho para entender o funcionamento bioquímico da maconha e suas propriedades medicinais foi aberto por um cientista israelense que sobreviveu ao Holocausto.</p>
           <div class="flex justify-between items-center">
