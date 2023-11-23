@@ -37,6 +37,14 @@ Route::get('/admin/dashboard', function() {
     return view('admin.dashboard');
 });
 
-Route::get('/user/profile/edit', function() {
+Route::get('/user/pacient/profile/edit', function() {
     return view('user.profileEditPaciente');
+});
+
+Route::get('/user/prescritor/profile/edit', function() {
+    return view('user.profileEditPrescritor');
+});
+
+Route::get('/user/profile', function() {
+    return view('user.profilePage');
 });
