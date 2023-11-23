@@ -9,7 +9,6 @@
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
 </head>
-
 <body>
     <header>
         <nav id="navbar" class="fixed flex flex-wrap items-center justify-between w-full h-12 lg:h-20 bg-[#FBFBFB] text-neutral-500 shadow-lg dark:bg-neutral-600" data-te-navbar-ref>
@@ -31,7 +30,7 @@
                         <li class="my-0 pl-2 pr-1" data-te-nav-item-ref>
                             <p class="text-neutral-600 disabled:text-black/30 dark:text-neutral-200  lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                                 aria-current="page" href="#" data-te-nav-link-ref>
-                                Área do Associado / Paciente
+                                Área do Administrador
                             </p>
                         </li>
                     </ul>
@@ -50,38 +49,42 @@
     <section id="main" class="pt-[48px] lg:pt-[80px] w-full h-[calc(100vh-48px)] lg:h-[calc(100vh-80px)]">
         <div id="grid" class="lg:grid lg:grid-cols-8">
             <div id="sidenav" class="fixed lg:static lg:col-start-1 lg:col-span-1 h-[calc(100vh-48px)] lg:h-[calc(100vh-80px)] lg:left-0 left-[-300px] bg-[#04BF68] shadow text-black font-medium">
-                <div class="pt-4">
+                <div class="pt-4"> 
                     <div id="profile" class="px-5 py-2 flex lg:hidden items-center duration-300 cursor-pointer hover:bg-white hover:bg-opacity-70">
                         <i class="bi bi-person-circle"></i>
                         <span class="mx-2 my-[4px] text-sm text-black">Perfil</span>
                     </div>
                     <div id="home" class="px-5 py-2 flex items-center duration-300 cursor-pointer hover:bg-white hover:bg-opacity-70">
-                        <i class="bi bi-house-door-fill"></i>
+                        <i class="bi bi-bar-chart-fill"></i>
                         <span class="mx-2 my-[4px] text-sm text-black">Dashboard</span>
                     </div>
-                    <div id="medical-files" class="px-5 py-2 flex items-center duration-300 cursor-pointer hover:bg-white hover:bg-opacity-70">
-                        <i class="bi bi-file-earmark-text-fill"></i>
-                        <span class="mx-2 my-[4px] text-sm text-black">Receitas</span>
+                    <div id="search" class="px-5 py-2 flex items-center duration-300 cursor-pointer hover:bg-white hover:bg-opacity-70">
+                        <i class="bi bi-search"></i>
+                        <span class="mx-2 my-[4px] text-sm text-black">Consultar Associado</span>
                     </div>
-                    <div id="documents" class="px-5 py-2 flex items-center duration-300 cursor-pointer hover:bg-white hover:bg-opacity-70">
-                        <i class="bi bi-file-person-fill"></i>
-                        <span class="mx-2 my-[4px] text-sm text-black">Documentos</span>
+                    <div id="manage-people" class="px-5 py-2 flex items-center duration-300 cursor-pointer hover:bg-white hover:bg-opacity-70">
+                        <i class="bi bi-person-lines-fill"></i>
+                        <span class="mx-2 my-[4px] text-sm text-black">Gerenciar Associados</span>
+                    </div>
+                    <div id="manage-organization" class="px-5 py-2 flex items-center duration-300 cursor-pointer hover:bg-white hover:bg-opacity-70">
+                        <i class="bi bi-ui-checks-grid"></i>
+                        <span class="mx-2 my-[4px] text-sm text-black">Gerenciar Recursos</span>
                     </div>
                 </div>
             </div>
             <div id="content" class="py-6 px-6 lg:px-8 col-start-2 col-span-7" onclick="Close()">
                 <div class="font-medium text-base lg:text-2xl text-black">
-                    <h1>Olá, Associado!</h1>
+                    <h1>Olá, Administrador!</h1>
                 </div>
                 <div class="mt-3 lg:mt-8 grid lg:grid-cols-2 gap-4">
                     <div class="tile">
                         <div
                             class="rounded-lg bg-white p-4 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                             <h5 class="mb-2 text-sm md:text-xl lg:text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                                Consultas Realizadas
+                                Número de Associados
                             </h5>
                             <p class="mb-4 text-xs md:text-base lg:text-base text-neutral-600 dark:text-neutral-200">
-                                Total: 3 consultas
+                                Total: X associados
                             </p>
                         </div>
                     </div>
@@ -89,10 +92,10 @@
                         <div
                             class="rounded-lg bg-white p-4 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                             <h5 class="mb-2 text-sm md:text-xl lg:text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                                Consultas Agendadas
+                                Número de Pacientes
                             </h5>
                             <p class="mb-4 text-xs md:text-base lg:text-base text-neutral-600 dark:text-neutral-200">
-                                Total: 0 consultas
+                                Total: X pacientes 
                             </p>
                         </div>
                     </div>
@@ -100,10 +103,10 @@
                         <div
                             class="rounded-lg bg-white p-4 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                             <h5 class="mb-2 text-sm md:text-xl lg:text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                                Vencimento da Receita
+                                Número de Prescritores
                             </h5>
                             <p class="mb-4 text-xs md:text-base lg:text-base text-neutral-600 dark:text-neutral-200">
-                                Data: 23 de Dezembro de 2023
+                                Total: X prescritores
                             </p>
                         </div>
                     </div>
@@ -111,10 +114,32 @@
                         <div
                             class="rounded-lg bg-white p-4 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                             <h5 class="mb-2 text-sm md:text-xl lg:text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                                Data da Próxima Consulta
+                                Solicitações de Consultas
                             </h5>
                             <p class="mb-4 text-xs md:text-base lg:text-base text-neutral-600 dark:text-neutral-200">
-                                Consulta ainda não agendada.
+                                Total: X consultas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div
+                            class="rounded-lg bg-white p-4 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                            <h5 class="mb-2 text-sm md:text-xl lg:text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                                Consultas Realizadas Nos Últimos 30 Dias
+                            </h5>
+                            <p class="mb-4 text-xs md:text-base lg:text-base text-neutral-600 dark:text-neutral-200">
+                                Total: X consultas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div
+                            class="rounded-lg bg-white p-4 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                            <h5 class="mb-2 text-sm md:text-xl lg:text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                                Quantidade de Mudas de Cannabis
+                            </h5>
+                            <p class="mb-4 text-xs md:text-base lg:text-base text-neutral-600 dark:text-neutral-200">
+                                Total: X mudas
                             </p>
                         </div>
                     </div>
