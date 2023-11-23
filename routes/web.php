@@ -32,3 +32,11 @@ Route::get('/login', function() {
 Route::get('/user/dashboard', function() {
     return view('user.dashboard');
 });
+
+Route::get('/user/contact', function() {
+    return view('user.contact');
+});
+
+Route::get('/user/quemSomos', function() {
+    return view('user.quemSomos');
+});
