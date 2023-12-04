@@ -1,16 +1,5 @@
-<!doctype html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
-    @vite('resources/css/app.css')
-    @vite('resources/js/app.js')
-</head>
-
-<body>
-    <section class="p-14 mx-auto bg-neutral-200 dark:bg-neutral-700">
+<x-layout>
+    <section class="mx-auto bg-white dark:bg-gray-900">
         <div class="container p-10 max-w-max">
             <div class="g-6 flex h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
                 <div class="w-full">
@@ -18,57 +7,75 @@
                         <div class="g-0 lg:flex lg:flex-wrap">
                             <div class="px-4 md:px-0 lg:w-6/12">
                                 <div class="md:mx-auto md:px-12 md:pb-12 md:w-5/6">
-                                    <div class="items-center flex flex-col">
-                                        <img class="w-48 pt-12" src="{{ asset('img/logo_marijuana.png') }}"
-                                            alt="logo_marijuana">
-                                        <h4 class="mb-12 mt-1 pb-1 text-xl font-semibold">
+                                    <div
+                                        class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+                                        <a href="{{ route('index') }}"
+                                            class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+                                            <img class="w-8 h-8 mr-2" src="{{ asset('img/logo_marijuana.png') }}"
+                                                alt="logo">
                                             Marijuana
-                                        </h4>
+                                        </a>
+                                        <div
+                                            class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+                                            <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                                                <h1
+                                                    class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                                                    Login
+                                                </h1>
+                                                <form class="space-y-4 md:space-y-6" action="#">
+                                                    <div>
+                                                        <label for="email"
+                                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                                            Email
+                                                        </label>
+                                                        <input type="email" name="email" id="email"
+                                                            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                                            placeholder="name@domain.com" required>
+                                                    </div>
+                                                    <div>
+                                                        <label for="password"
+                                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                                                            Senha
+                                                        </label>
+                                                        <input type="password" name="password" id="password"
+                                                            placeholder="••••••••"
+                                                            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                                            required>
+                                                    </div>
+                                                    <div class="flex items-center justify-between">
+                                                        <div class="flex items-start">
+                                                            <div class="flex items-center h-5">
+                                                                <input id="remember" aria-describedby="remember"
+                                                                    type="checkbox"
+                                                                    class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
+                                                                    required="">
+                                                            </div>
+                                                            <div class="ml-3 text-sm">
+                                                                <label for="remember"
+                                                                    class="text-gray-500 dark:text-gray-300">
+                                                                    Lembrar email
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#"
+                                                            class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">
+                                                            Esqueceu sua senha?</a>
+                                                    </div>
+                                                    <button type="submit"
+                                                        class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                                                        Entrar
+                                                    </button>
+                                                    <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                                                        Não é associado?
+                                                        <a href="#"
+                                                            class="font-medium text-primary-600 hover:underline dark:text-primary-500">
+                                                            Associe-se
+                                                        </a>
+                                                    </p>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
-
-                                    <form>
-                                        <p class="mb-4">Informações de login</p>
-
-                                        <div class="relative mb-4">
-                                            <input type="email"
-                                                class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
-                                                id="emailInput" placeholder="Endereço de Email" />
-                                            <label for="emailInput"
-                                                class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
-                                                Endereço de Email
-                                            </label>
-                                        </div>
-
-                                        <div class="relative mb-4">
-                                            <input type="password"
-                                                class="peer m-0 block h-[58px] w-full rounded border-2 border-solid border-neutral-600 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-app-green-dark focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-700 focus:outline-none peer-focus:text-app-green-dark dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-app-green-light dark:peer-focus:text-app-green-light [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
-                                                id="passwordInput" placeholder="Senha" />
-                                            <label for="passwordInput"
-                                                class="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-app-green-dark peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-app-green-light">
-                                                Senha
-                                            </label>
-                                        </div>
-
-                                        <div class="mb-12 pb-1 pt-1 text-center">
-                                            <button
-                                                class="mb-3 inline-block w-full rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(0,0,0,0.2)] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)]"
-                                                type="button" data-te-ripple-init data-te-ripple-color="light"
-                                                style="background: linear-gradient(to right, #B0F291, #04BF68);">
-                                                Entrar
-                                            </button>
-
-                                            <a href="#!">Esqueceu a senha?</a>
-                                        </div>
-
-                                        <div class="flex items-center justify-between pb-6">
-                                            <p class="mb-0 mr-2">Ainda não é associado?</p>
-                                            <button type="button"
-                                                class="inline-block rounded border-2 border-app-green-dark px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-app-green-dark transition duration-150 ease-in-out hover:bg-app-green-vivid hover:bg-opacity-10 focus:outline-none focus:ring-0 dark:border-app-green-light dark:text-app-green-light dark:hover:bg-app-green-dark dark:hover:bg-opacity-10"
-                                                data-te-ripple-init data-te-ripple-color="light">
-                                                Associe-se
-                                            </button>
-                                        </div>
-                                    </form>
                                 </div>
                             </div>
 
@@ -93,6 +100,4 @@
             </div>
         </div>
     </section>
-</body>
-
-</html>
+</x-layout>
