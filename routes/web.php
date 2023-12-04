@@ -14,17 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
-})->name('index');
+    return view('welcome');
+});
+
+Route::get('/cadastroPaciente', function () {
+    return view('cadastroPaciente');
+});
+
+Route::get('/cadastroPrescritor', function () {
+    return view('cadastroPrescritor');
+});
 
 Route::get('/login', function() {
     return view('auth.login');
-})->name('login');
+});
 
-Route::get('/dashboard', function() {
-    return view('dashboard.index');
-})->name('dashboard');
+Route::get('/user/dashboard', function() {
+    return view('user.dashboard');
+});
 
-Route::get('/profile', function() {
-    return view('profile.index');
-})->name('profile');
+Route::get('/user/profile', function() {
+    return view('user.profilePage');
+});
