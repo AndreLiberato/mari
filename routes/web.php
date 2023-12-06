@@ -42,12 +42,44 @@ Route::get('/dashboard/paciente/receitas', function() {
 })->name('receitasPaciente');
 
 Route::get('/dashboard/prescritor', function() {
-    return view('dashboard.prescritor');
-})->name('dashboard');
+    return view('dashboard.prescritor.visaoGeral');
+})->name('visaoGeralPrescritor');
+
+Route::get('/dashboard/prescritor/pacientes', function() {
+    return view('dashboard.prescritor.pacientes');
+})->name('pacientesPrescritor');
+
+Route::get('/dashboard/prescritor/consultas', function() {
+    return view('dashboard.prescritor.consultas');
+})->name('consultasPrescritor');
 
 Route::get('/dashboard/admin', function() {
-    return view('dashboard.admin');
-})->name('dashboard');
+    return view('dashboard.admin.visaoGeral');
+})->name('visaoGeralAdmin');
+
+Route::get('/dashboard/admin/consultas', function() {
+    return view('dashboard.admin.consultas');
+})->name('consultasAdmin');
+
+Route::get('/dashboard/admin/documentos', function() {
+    return view('dashboard.admin.documentos');
+})->name('documentosAdmin');
+
+Route::get('/dashboard/admin/financas', function() {
+    return view('dashboard.admin.financas');
+})->name('financasAdmin');
+
+Route::get('/dashboard/admin/pacientes', function() {
+    return view('dashboard.admin.pacientes');
+})->name('pacientesAdmin');
+
+Route::get('/dashboard/admin/plantacao', function() {
+    return view('dashboard.admin.plantacao');
+})->name('plantacaoAdmin');
+
+Route::get('/dashboard/admin/prescritores', function() {
+    return view('dashboard.admin.prescritores');
+})->name('prescritoresAdmin');
 
 Route::get('/profile', function() {
     return view('profile.index');
