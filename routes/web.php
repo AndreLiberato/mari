@@ -28,3 +28,20 @@ Route::get('/dashboard', function() {
 Route::get('/profile', function() {
     return view('profile.index');
 })->name('profile');
+
+Route::get('/diretoria', function() {
+    return view('profile.diretoria');
+})->name('diretoria');
+
+Route::get('/depoimentos', function() {
+    return view('profile.depoimentos');
+})->name('depoimentos');
+Route::get('/cadastro', function() {
+    return view('profile.cadastro');
+})->name('cadastro');
+Route::get('/contato', function() {
+    return view('profile.contato');
+})->name('contato');
+Route::get('/beneficios', function() {
+    return view('profile.beneficios');
+})->name('beneficios');
