@@ -58,12 +58,16 @@ Route::get('/dashboard/admin', function() {
 })->name('visaoGeralAdmin');
 
 Route::get('/dashboard/admin/consultas', function() {
-    return view('dashboard.admin.consultas');
+    return view('dashboard.admin.buscaConsultas');
 })->name('consultasAdmin');
 
-Route::get('/dashboard/admin/documentos', function() {
-    return view('dashboard.admin.documentos');
-})->name('documentosAdmin');
+Route::get('/dashboard/admin/consultas/agendar', function() {
+    return view('dashboard.admin.agendaConsultas');
+})->name('agendarConsultasAdmin');
+
+Route::get('/dashboard/admin/consultas/cancelar', function() {
+    return view('dashboard.admin.cancelaConsultas');
+})->name('cancelaConsultasAdmin');
 
 Route::get('/dashboard/admin/financas', function() {
     return view('dashboard.admin.financas');

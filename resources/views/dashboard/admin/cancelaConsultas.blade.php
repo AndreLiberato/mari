@@ -1,10 +1,30 @@
 <x-dashboard.admin.layout>
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 px-4 mx-auto lg:mx-0 lg:p-12">
-            <h2 class="text-3xl lg:text-3xl font-bold text-gray-900 dark:text-white">Plantação</h2>
+            <h2 class="text-3xl lg:text-3xl font-bold text-gray-900 dark:text-white">Cancelar Consultas</h2>
 
             <div class="lg:mt-8">
-                
+                <div
+                    class="mb-4 bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <form>
+                        <label for="default-search"
+                            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                </svg>
+                            </div>
+                            <input type="search" id="default-search"
+                                class="block w-full p-4 ps-10 text-sm text-gray-900 border-gray-300 rounded-lg bg-white focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                placeholder="Pesquise uma consulta por paciente, prescritor ou data" required>
+                            <button type="submit"
+                                class="text-white absolute end-2.5 bottom-2.5 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Pesquisar</button>
+                        </div>
+                    </form>
+                </div>
                 <div
                     class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <div class="relative overflow-x-auto sm:rounded-lg">
@@ -13,16 +33,22 @@
                                 class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                                 <tr>
                                     <th scope="col" class="px-6 py-3">
-                                        identificação
+                                        paciente
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        data de plantio
+                                        prescritor
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        estimativa de colheita
+                                        data
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        colheita
+                                        horário
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        tipo
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Cancelar
                                     </th>
                                 </tr>
                             </thead>
@@ -30,136 +56,154 @@
                                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                     <th scope="row"
                                         class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        0310
+                                        Rodrigo Lins
                                     </th>
                                     <td class="px-6 py-4">
-                                        01/05/2023
+                                        Dra. Luciana Azevedo
                                     </td>
-                                    <td class="px-6 py-4 ">
-                                        12/02/2024
+                                    <td class="px-6 py-4">
+                                        dd/mm/yyyy
                                     </td>
-                                    <td class="px-6 py-3 text-red-500 dark:text-red-400">
+                                    <td class="px-6 py-4">
+                                        hh:mm
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Retorno
+                                    </td>
+                                    <td class="px-6 py-4 text-red-500 dark:text-red-400">
                                         <button type="submit"
                                             class="text-white bg-red-600 hover:bg-red-400 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-red-500 dark:hover:bg-red-400 dark:focus:ring-red-300">
-                                            Colher
+                                            Cancelar
                                         </button>
                                     </td>
                                 </tr>
                                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                     <th scope="row"
                                         class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        0311
+                                        Rose Cavalcante
                                     </th>
                                     <td class="px-6 py-4">
-                                        01/05/2023
+                                        Dra. Verônica Dias
                                     </td>
-                                    <td class="px-6 py-4 ">
-                                        12/02/2024
+                                    <td class="px-6 py-4">
+                                        dd/mm/yyyy
                                     </td>
-                                    <td class="px-6 py-3 text-red-500 dark:text-red-400">
+                                    <td class="px-6 py-4">
+                                        hh:mm
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Retorno
+                                    </td>
+                                    <td class="px-6 py-4 text-yellow-400 dark:text-yellow-300">
                                         <button type="submit"
                                             class="text-white bg-red-600 hover:bg-red-400 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-red-500 dark:hover:bg-red-400 dark:focus:ring-red-300">
-                                            Colher
+                                            Cancelar
                                         </button>
                                     </td>
                                 </tr>
                                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                     <th scope="row"
                                         class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        0312
+                                        Eduarda Lima
                                     </th>
                                     <td class="px-6 py-4">
-                                        07/05/2023
+                                        Dr. João Silva
                                     </td>
-                                    <td class="px-6 py-4 ">
-                                        18/02/2024
+                                    <td class="px-6 py-4">
+                                        dd/mm/yyyy
                                     </td>
-                                    <td class="px-6 py-3 text-red-500 dark:text-red-400">
+                                    <td class="px-6 py-4">
+                                        hh:mm
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Primeira vez
+                                    </td>
+                                    <td class="px-6 py-4">
                                         <button type="submit"
                                             class="text-white bg-red-600 hover:bg-red-400 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-red-500 dark:hover:bg-red-400 dark:focus:ring-red-300">
-                                            Colher
+                                            Cancelar
                                         </button>
                                     </td>
                                 </tr>
                                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                     <th scope="row"
                                         class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        0313
+                                        Daniel Correa
                                     </th>
                                     <td class="px-6 py-4">
-                                        13/05/2023
+                                        Dr. João Silva
                                     </td>
-                                    <td class="px-6 py-4 ">
-                                        24/02/2024
+                                    <td class="px-6 py-4">
+                                        dd/mm/yyyy
                                     </td>
-                                    <td class="px-6 py-3 text-red-500 dark:text-red-400">
+                                    <td class="px-6 py-4">
+                                        hh:mm
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Primeira vez
+                                    </td>
+                                    <td class="px-6 py-4">
                                         <button type="submit"
                                             class="text-white bg-red-600 hover:bg-red-400 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-red-500 dark:hover:bg-red-400 dark:focus:ring-red-300">
-                                            Colher
+                                            Cancelar
                                         </button>
                                     </td>
                                 </tr>
                                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                     <th scope="row"
                                         class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        0314
+                                        Pedro Alves
                                     </th>
                                     <td class="px-6 py-4">
-                                        13/05/2023
+                                        Dra. Luciana Azevedo
                                     </td>
-                                    <td class="px-6 py-4 ">
-                                        24/02/2024
+                                    <td class="px-6 py-4">
+                                        dd/mm/yyyy
                                     </td>
-                                    <td class="px-6 py-3 text-red-500 dark:text-red-400">
+                                    <td class="px-6 py-4">
+                                        hh:mm
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        Retorno
+                                    </td>
+                                    <td class="px-6 py-4 text-yellow-400 dark:text-yellow-300">
                                         <button type="submit"
                                             class="text-white bg-red-600 hover:bg-red-400 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-red-500 dark:hover:bg-red-400 dark:focus:ring-red-300">
-                                            Colher
+                                            Cancelar
                                         </button>
                                     </td>
                                 </tr>
                                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                     <th scope="row"
                                         class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        0315
+                                        Maria da Glória Araújo
                                     </th>
                                     <td class="px-6 py-4">
-                                        13/05/2023
+                                        Dra. Patrícia Cardoso
                                     </td>
-                                    <td class="px-6 py-4 ">
-                                        24/02/2024
-                                    </td>
-                                    <td class="px-6 py-3 text-red-500 dark:text-red-400">
-                                        <button type="submit"
-                                            class="text-white bg-red-600 hover:bg-red-400 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-red-500 dark:hover:bg-red-400 dark:focus:ring-red-300">
-                                            Colher
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr class="bg-white dark:bg-gray-800 dark:border-gray-700">
-                                    <th scope="row"
-                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        0316
-                                    </th>
                                     <td class="px-6 py-4">
-                                        20/05/2023
+                                        dd/mm/yyyy
                                     </td>
-                                    <td class="px-6 py-4 ">
-                                        02/03/2024
+                                    <td class="px-6 py-4">
+                                        hh:mm
                                     </td>
-                                    <td class="px-6 py-3 text-red-500 dark:text-red-400">
+                                    <td class="px-6 py-4">
+                                        Retorno
+                                    </td>
+                                    <td class="px-6 py-2 text-red-500 dark:text-red-400">
                                         <button type="submit"
                                             class="text-white bg-red-600 hover:bg-red-400 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-red-500 dark:hover:bg-red-400 dark:focus:ring-red-300">
-                                            Colher
+                                            Cancelar
                                         </button>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                        <nav class="flex items-center flex-column flex-wrap md:flex-row justify-between pt-4 mt-0"
+                        <nav class="flex items-center flex-column flex-wrap md:flex-row justify-between pt-4 mt-4"
                             aria-label="Table navigation">
                             <span
                                 class="text-sm font-normal text-gray-500 dark:text-gray-400 mb-4 md:mb-0 block w-full md:inline md:w-auto">Exibindo
-                                <span class="font-semibold text-gray-900 dark:text-white">1-7</span> de <span
+                                <span class="font-semibold text-gray-900 dark:text-white">1-6</span> de <span
                                     class="font-semibold text-gray-900 dark:text-white">xxx</span></span>
                             <ul class="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8">
                                 <li>
@@ -200,73 +244,6 @@
                                 </li>
                             </ul>
                         </nav>
-                    </div>
-                    <div class="mt-2">
-                        <button data-modal-target="Cadastrar" data-modal-toggle="Cadastrar"
-                            class="block inline-flex items-center mt-2 lg:mt-0 px-5 py-2 text-sm font-medium text-center text-white bg-primary-500 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 rounded-lg dark:bg-primary-500 dark:hover:bg-primary-400 dark:focus:ring-primary-600"
-                            type="button">
-                            Cadastrar Muda
-                        </button>
-                        <div id="Cadastrar" tabindex="-1" aria-hidden="true"
-                            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                            <div class="relative p-4 w-full max-w-md max-h-full">
-                                <!-- Modal content -->
-                                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                                    <!-- Modal header -->
-                                    <div
-                                        class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                                            Cadastrar Muda
-                                        </h3>
-                                        <button type="button"
-                                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                                            data-modal-toggle="Cadastrar">
-                                            <svg class="w-3 h-3" aria-hidden="true"
-                                                xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                viewBox="0 0 14 14">
-                                                <path stroke="currentColor" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2"
-                                                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                                            </svg>
-                                            <span class="sr-only">Close modal</span>
-                                        </button>
-                                    </div>
-                                    <!-- Modal body -->
-                                    <form class="p-4 md:p-5">
-                                        <div class="grid gap-4 mb-4 grid-cols-1">
-                                            <div class="col-span-2 sm:col-span-1">
-                                                <form class="max-w-sm mx-auto">
-                                                    <div class="mb-5">
-                                                        <label for="Identificação"
-                                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Identificação da Muda</label>
-                                                        <input type="name" id="Identificação"
-                                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                                            placeholder="Identificação" requiprimary>
-                                                    </div>
-                                                    <div class="mb-5">
-                                                        <label for="Data"
-                                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                                            Data de Plantio</label>
-                                                        <input type="Data" id="Data"
-                                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                                            placeholder="Data" requiprimary>
-                                                    </div>
-                                                    <div class="mb-5">
-                                                        <label for="Estimativa"
-                                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                                            Estimativa de Colheita</label>
-                                                        <input type="Estimativa" id="Estimativa"
-                                                            class="bg-gray-50 mb-5 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                                            placeholder="Estimativa" requiprimary>
-                                                    </div>
-                                                    <button type="submit"
-                                                        class="text-white bg-primary-500 hover:bg-primary-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-primary-500 dark:hover:bg-primary-400 dark:focus:ring-primary-300">Adicionar</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
