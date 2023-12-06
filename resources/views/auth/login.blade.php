@@ -86,11 +86,7 @@
                                         Somos mais do que uma associação
                                     </h4>
                                     <p class="text-sm text-black">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                                        elit, sed do eiusmod tempor incididunt ut labore et
-                                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex
-                                        ea commodo consequat.
+                                    Na nossa Associação, acreditamos que o acesso à marijuana medicinal pode ser uma jornada transformadora para muitas pessoas que buscam alívio para uma variedade de condições de saúde. Comprometidos com a qualidade, orientação especializada e a promoção de uma abordagem responsável, estamos aqui para fornecer suporte e informação para todos os nossos membros.
                                     </p>
                                 </div>
                             </div>
