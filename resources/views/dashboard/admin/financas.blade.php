@@ -311,19 +311,6 @@
                         <p class="text-gray-500 border-t mt-4 pt-4 dark:text-gray-400 font-bold">Total: R$</p>
                     </div>
                 </div>
-                <!--<div
-                    class="p-6 grid grid-rows-2 gap-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <div class="my-3 border-y py-4 dark:border-gray-700 bg-white dark:bg-gray-800 text-lg">
-                        <p class="text-primary-600 dark:text-primary-500">Entradas: +R$</p>
-                        <p class="text-red-600 dark:text-red-500">Saídas: -R$</p>
-                        <p class="text-gray-500 border-t mt-4 pt-4 dark:text-gray-400 font-bold">Total: R$</p>
-                    </div>
-                    <div class="my-3 border-y py-4 dark:border-gray-700 bg-white dark:bg-gray-800 text-lg">
-                        <p class="text-primary-600 dark:text-primary-500">Entradas: +R$</p>
-                        <p class="text-red-600 dark:text-red-500">Saídas: -R$</p>
-                        <p class="text-gray-500 border-t mt-4 pt-4 dark:text-gray-400 font-bold">Total: R$</p>
-                    </div>
-                </div>-->
             </div>
         </div>
     </section>
