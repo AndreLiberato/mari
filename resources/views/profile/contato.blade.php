@@ -1,77 +1,44 @@
 <x-layout>
-    <div class="mx-auto max-w-2xl text-center">
-        <img class="mx-auto h-10" src="http://localhost:8000/img/logo_marijuana.png" alt="logo_marijuana">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contato</h2>
-        <p class="mt-2 text-lg leading-8 text-gray-600">Deixe sua mensagem: Estamos ansiosos para ouvir de você!
-            Utilize este espaço para compartilhar suas perguntas, comentários ou sugestões. Sua opinião é
-            importante
-            para nós, e responderemos o mais breve possível. Agradecemos por escolher se conectar conosco!
-        </p>
-    </div>
-    <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
-        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-            <div>
-                <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">Primeiro
-                    nome</label>
-                <div class="mt-2.5">
-                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
-                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+                Entre em contato
+            </h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+                Alguma dúvida ou sugestão? Nos fale preenchendo o formulário abaixo.
+            </p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                        Email
+                    </label>
+                    <input type="email" id="email"
+                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="name@company.com" required>
                 </div>
-            </div>
-            <div>
-                <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Último
-                    nome</label>
-                <div class="mt-2.5">
-                    <input type="text" name="last-name" id="last-name" autocomplete="family-name"
-                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                        Assunto
+                    </label>
+                    <input type="text" id="subject"
+                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        placeholder="Diga-nos em que podemos te ajudar." required>
                 </div>
-            </div>
-            <div class="sm:col-span-2">
-                <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
-                <div class="mt-2.5">
-                    <input type="email" name="email" id="email" autocomplete="email"
-                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
+                        Mensagem
+                    </label>
+                    <textarea id="message" rows="6"
+                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        placeholder="Leave a comment..."></textarea>
                 </div>
-            </div>
-            <div class="sm:col-span-2">
-                <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Número de
-                    telefone</label>
-                <div class="relative mt-2.5">
-                    <div class="absolute inset-y-0 left-0 flex items-center">
-                    </div>
-                    <input type="tel" name="phone-number" id="phone-number" autocomplete="tel"
-                        class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                </div>
-            </div>
-            <div class="sm:col-span-2">
-                <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Mensagem</label>
-                <div class="mt-2.5">
-                    <textarea name="message" id="message" rows="4"
-                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
-                </div>
-            </div>
-            <div class="flex gap-x-4 sm:col-span-2">
-                <div class="flex h-6 items-center">
-                    <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
-                    <button type="button"
-                        class="bg-gray-200 flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                        role="switch" aria-checked="false" aria-labelledby="switch-1-label">
-                        <span class="sr-only">Agree to policies</span>
-                        <!-- Enabled: "translate-x-3.5", Not Enabled: "translate-x-0" -->
-                        <span aria-hidden="true"
-                            class="translate-x-0 h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"></span>
+                <div class="flex justify-end">
+                    <button type="submit"
+                        class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                        Enviar mensagem
                     </button>
                 </div>
-                <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
-                    Ao selecionar esta opção, você concorda com nossa política de privacidade.
-                    <a href="#" class="font-semibold text-indigo-600">privacy&nbsp;policy</a>.
-                </label>
-            </div>
+            </form>
         </div>
-        <div class="mt-10">
-            <button type="submit"
-                class="block w-full rounded-md bg-gradient-to-r from-green-400 via-teal-500 to-emerald-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:from-green-500 hover:via-teal-600 hover:to-emerald-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Enviar</button>
-        </div>
-    </form>
-    </div>
+    </section>
 </x-layout>

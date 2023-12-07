@@ -79,8 +79,8 @@
                 Bem-vindo à Associação de Marijuana Medicinal Canábica: Seu Refúgio para o Bem-Estar Natural!
                 </h2>
                 <p class="mb-4">
-                Na nossa Associação, acreditamos que o acesso à marijuana medicinal pode ser uma jornada transformadora 
-                para muitas pessoas que buscam alívio para uma variedade de condições de saúde. Comprometidos com a qualidade, 
+                Na nossa Associação, acreditamos que o acesso à marijuana medicinal pode ser uma jornada transformadora
+                para muitas pessoas que buscam alívio para uma variedade de condições de saúde. Comprometidos com a qualidade,
                 orientação especializada e a promoção de uma abordagem responsável, estamos aqui para fornecer suporte e informação para todos os nossos membros.
                 </p>
             </div>
@@ -94,12 +94,12 @@
     </section>
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-            <div class="max-w-screen-md mb-8 lg:mb-16">
+            <div class="max-w-screen-md mb-8 lg:mb-16 font-light text-gray-500 sm:text-lg dark:text-gray-400">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Nossos Serviços</h2>
                 <p class="mb-4">Consultas Especializadas: Oferecemos consultas individuais para entender as necessidades específicas de cada membro, recomendando produtos adequados às suas condições de saúde.</p>
-                    
+
                 <p class="mb-4">Produtos de Qualidade: Trabalhamos apenas com fornecedores confiáveis, garantindo que nossos membros tenham acesso a marijuana medicinal de alta qualidade, cultivada e processada com os mais altos padrões.</p>
-                    
+
                 <p class="mb-4">Educação Continuada: Promovemos a conscientização sobre o uso responsável da marijuana medicinal, fornecendo recursos educacionais, workshops e eventos para manter nossos membros informados e capacitados.</p>
             </div>
             <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
@@ -197,7 +197,7 @@
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                     Depoimentos
                 </h2>
-                <p class="mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400"> 
+                <p class="mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
                 Histórias de Transformação: Descubra como a Marijuana Medicinal Mudou Vidas
                 </p>
             </div>
@@ -206,11 +206,11 @@
                     class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 lg:border-r dark:bg-gray-800 dark:border-gray-700">
                     <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Renascendo com a Cannabis Medicinal: O Testemunho de Ana</h3>
-                        "Descobri o poder da cannabis medicinal através da Associação. Há anos, sofro com dores crônicas decorrentes de uma condição de saúde, 
+                        "Descobri o poder da cannabis medicinal através da Associação. Há anos, sofro com dores crônicas decorrentes de uma condição de saúde,
                         e os medicamentos convencionais não traziam alívio suficiente.
-                        Foi então que conheci a Associação, onde recebi orientação adequada e acesso a produtos de cannabis medicinal. 
-                        Desde então, minha qualidade de vida melhorou significativamente. 
-                        As dores diminuíram, e consigo realizar minhas atividades diárias de maneira mais confortável. Sou imensamente grata por ter encontrado esse suporte e por 
+                        Foi então que conheci a Associação, onde recebi orientação adequada e acesso a produtos de cannabis medicinal.
+                        Desde então, minha qualidade de vida melhorou significativamente.
+                        As dores diminuíram, e consigo realizar minhas atividades diárias de maneira mais confortável. Sou imensamente grata por ter encontrado esse suporte e por
                         ter descoberto uma alternativa eficaz para o meu bem-estar."
                     </blockquote>
                     <figcaption class="flex justify-center items-center space-x-3">
@@ -227,9 +227,9 @@
                     class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 dark:bg-gray-800 dark:border-gray-700">
                     <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Noites Serenas, Dias Tranquilos: A Jornada de Carla com a Cannabis Medicinal</h3>
-                            "Depois de anos lutando contra a insônia e a ansiedade, encontrei na cannabis medicinal da Associação um aliado 
-                            fundamental para meu equilíbrio emocional. Os produtos oferecidos são de alta qualidade, e a equipe da Associação 
-                            sempre esteve disponível para esclarecer minhas dúvidas. Agora, durmo melhor e consigo enfrentar os desafios do dia 
+                            "Depois de anos lutando contra a insônia e a ansiedade, encontrei na cannabis medicinal da Associação um aliado
+                            fundamental para meu equilíbrio emocional. Os produtos oferecidos são de alta qualidade, e a equipe da Associação
+                            sempre esteve disponível para esclarecer minhas dúvidas. Agora, durmo melhor e consigo enfrentar os desafios do dia
                             a dia de forma mais tranquila. Recomendo a todos que buscam uma abordagem mais natural para cuidar da saúde mental."
                     </blockquote>
                     <figcaption class="flex justify-center items-center space-x-3">
@@ -247,9 +247,9 @@
                     class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 lg:border-b-0 md:p-12 lg:border-r dark:bg-gray-800 dark:border-gray-700">
                     <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Luz Contra as Trevas da Enxaqueca: A História de Mario com a Cannabis Medicinal</h3>
-                            Sou portador de uma condição que causa fortes episódios de enxaqueca. A cannabis medicinal da Associação tem sido minha 
-                            salvação. Através de consultas especializadas, pude encontrar o produto mais adequado para o meu caso. Além de aliviar as 
-                            dores agudas da enxaqueca, percebi uma melhoria geral na minha qualidade de vida. É incrível como a cannabis medicinal pode 
+                            Sou portador de uma condição que causa fortes episódios de enxaqueca. A cannabis medicinal da Associação tem sido minha
+                            salvação. Através de consultas especializadas, pude encontrar o produto mais adequado para o meu caso. Além de aliviar as
+                            dores agudas da enxaqueca, percebi uma melhoria geral na minha qualidade de vida. É incrível como a cannabis medicinal pode
                             fazer a diferença quando utilizada de forma responsável e orientada.
                     </blockquote>
                     <figcaption class="flex justify-center items-center space-x-3">
@@ -266,9 +266,9 @@
                     class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-gray-200 md:p-12 dark:bg-gray-800 dark:border-gray-700">
                     <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Empreendedor em Equilíbrio: João e a Cannabis Medicinal na Gestão do Estresse</h3>
-                        "Como empreendedor, o estresse e a pressão do trabalho sempre foram desafios constantes. Decidi explorar a cannabis medicinal 
-                        como uma alternativa aos tradicionais ansiolíticos. Na Associação, fui orientado sobre os diferentes produtos disponíveis e encontrei 
-                        uma solução personalizada para minhas necessidades. A cannabis medicinal não apenas me ajudou a controlar a ansiedade, mas também 
+                        "Como empreendedor, o estresse e a pressão do trabalho sempre foram desafios constantes. Decidi explorar a cannabis medicinal
+                        como uma alternativa aos tradicionais ansiolíticos. Na Associação, fui orientado sobre os diferentes produtos disponíveis e encontrei
+                        uma solução personalizada para minhas necessidades. A cannabis medicinal não apenas me ajudou a controlar a ansiedade, mas também
                         melhorou minha concentração e foco. Estou impressionado com os resultados e agradeço à Associação pelo suporte contínuo."
                     </blockquote>
                     <figcaption class="flex justify-center items-center space-x-3">
