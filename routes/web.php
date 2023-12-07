@@ -89,6 +89,10 @@ Route::get('/profile', function() {
     return view('profile.index');
 })->name('profile');
 
+Route::get('/doctorprofile', function() {
+    return view('doctorprofile.index');
+})->name('doctorprofile');
+
 Route::get('/diretoria', function() {
     return view('profile.diretoria');
 })->name('diretoria');
@@ -108,3 +112,4 @@ Route::get('/contato', function() {
 Route::get('/beneficios', function() {
     return view('profile.beneficios');
 })->name('beneficios');
+
