@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth\Register;
 
+use App\Http\Api\ApiLinks;
 use App\Http\Api\Services\StaticResources;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Http;
@@ -27,11 +28,10 @@ class RegisterPacienteController extends Controller
     {
         $cadastroFormInfo = $request->all();
 
-        $response = Http::post('http://localhost:8080/cadastro/paciente', $cadastroFormInfo);
+        $response = Http::post(ApiLinks::CADASTRO_PACIENTE, $cadastroFormInfo);
 
         if ($response->status() == 201) {
             return redirect()->route('login')->with('cadastro_sucesso', 'Paciente cadastrado com sucesso!.');
-            // return view('auth.login')->with('cadastro_sucesso', 'Paciente cadastrado.');
         } elseif ($response->status() == 400) {
             return redirect()->route('paciente.create')->withErrors($response->json());
         } else {

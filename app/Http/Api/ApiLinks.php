@@ -8,7 +8,7 @@ class ApiLinks
     const BASE_API_URL = "https://marijuana-api-22e31cc2869d.herokuapp.com";
 
     // Auth
-    const CADASTRO_PACIENTE = self::BASE_API_URL."/auth/cadastro/paciente";
+    const CADASTRO_PACIENTE = self::BASE_API_URL."/cadastro/paciente";
 
     // Enum
     const ENUM_BASE_URL = self::BASE_API_URL."/enum";
