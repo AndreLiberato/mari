@@ -103,10 +103,10 @@
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
                             <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
-                                Plano de saúde
+                                Endereço de email
                             </p>
                             <p class="text-sm font-thin text-gray-500 truncate dark:text-white">
-                                SUS
+                                bonnie@email.com
                             </p>
                         </div>
                     </div>
@@ -116,10 +116,39 @@
                     <div class="flex items-center ">
                         <div class="flex-1 min-w-0 ms-4">
                             <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
-                                Endereço de Email
+                                CRM/CRMV/CRO
                             </p>
                             <p class="text-sm font-thin text-gray-500 truncate dark:text-white">
-                                bonnie@email.com
+                                123456
+                            </p>
+                        </div>
+                        <div class="flex-1 min-w-0 ms-4">
+                            <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                                Estado de registro
+                            </p>
+                            <p class="text-sm font-thin text-gray-500 truncate dark:text-white">
+                                RN
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="pt-3 pb-0 sm:pt-4">
+                    <div class="flex items-center ">
+                        <div class="flex-1 min-w-0 ms-4">
+                            <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                                Grau de formação
+                            </p>
+                            <p class="text-sm font-thin text-gray-500 truncate dark:text-white">
+                                Mestre
+                            </p>
+                        </div>
+                        <div class="flex-1 min-w-0 ms-4">
+                            <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                                Especialidade
+                            </p>
+                            <p class="text-sm font-thin text-gray-500 truncate dark:text-white">
+                                Pulmão
                             </p>
                         </div>
                     </div>

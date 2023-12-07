@@ -9,6 +9,31 @@
                                 <div class="md:mx-auto md:px-12 md:pb-12 md:w-5/6">
                                     <div
                                         class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+                                        @if (session('cadastro_sucesso'))
+                                            <div id="alert-additional-content-3"
+                                                class="p-4 mb-4 text-green-800 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 dark:border-green-800"
+                                                role="alert">
+                                                <div class="flex items-center">
+                                                    <svg class="flex-shrink-0 w-4 h-4 me-2" aria-hidden="true"
+                                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                        viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                                                    </svg>
+                                                    <span class="sr-only">Info</span>
+                                                    <h3 class="text-xl font-medium">{{ session('cadastro_sucesso') }}
+                                                    </h3>
+                                                </div>
+                                                <div class="flex justify-center">
+                                                    <button type="button"
+                                                        class="text-green-800 bg-transparent border border-green-800 hover:bg-green-900 hover:text-white focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-3 py-1.5 text-center dark:hover:bg-green-600 dark:border-green-600 dark:text-green-400 dark:hover:text-white dark:focus:ring-green-800"
+                                                        data-dismiss-target="#alert-additional-content-3"
+                                                        aria-label="Close">
+                                                        Entendi
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        @endif
                                         <a href="{{ route('index') }}"
                                             class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
                                             <img class="w-8 h-8 mr-2" src="{{ asset('img/logo_marijuana.png') }}"
@@ -86,11 +111,7 @@
                                         Somos mais do que uma associação
                                     </h4>
                                     <p class="text-sm text-black">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                                        elit, sed do eiusmod tempor incididunt ut labore et
-                                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex
-                                        ea commodo consequat.
+                                    Na nossa Associação, acreditamos que o acesso à marijuana medicinal pode ser uma jornada transformadora para muitas pessoas que buscam alívio para uma variedade de condições de saúde. Comprometidos com a qualidade, orientação especializada e a promoção de uma abordagem responsável, estamos aqui para fornecer suporte e informação para todos os nossos membros.
                                     </p>
                                 </div>
                             </div>
