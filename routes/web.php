@@ -28,3 +28,7 @@ Route::get('/dashboard', function() {
 Route::get('/profile', function() {
     return view('profile.index');
 })->name('profile');
+
+Route::get('/doctorprofile', function() {
+    return view('doctorprofile.index');
+})->name('doctorprofile');
