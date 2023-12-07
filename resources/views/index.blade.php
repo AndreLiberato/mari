@@ -76,13 +76,12 @@
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
             <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-                    Marijuana Medicina Canábica
+                Bem-vindo à Associação de Marijuana Medicinal Canábica: Seu Refúgio para o Bem-Estar Natural!
                 </h2>
                 <p class="mb-4">
-                    Mudando vidas...
-                </p>
-                <p>
-                    Texto aqui
+                Na nossa Associação, acreditamos que o acesso à marijuana medicinal pode ser uma jornada transformadora 
+                para muitas pessoas que buscam alívio para uma variedade de condições de saúde. Comprometidos com a qualidade, 
+                orientação especializada e a promoção de uma abordagem responsável, estamos aqui para fornecer suporte e informação para todos os nossos membros.
                 </p>
             </div>
             <div class="grid grid-cols-2 gap-4 mt-8">
@@ -96,12 +95,12 @@
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
             <div class="max-w-screen-md mb-8 lg:mb-16">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-                    Imagine aqui um texto massa
-                </h2>
-                <p class="text-gray-500 sm:text-xl dark:text-gray-400">
-                    Aqui também.
-                </p>
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Nossos Serviços</h2>
+                <p class="mb-4">Consultas Especializadas: Oferecemos consultas individuais para entender as necessidades específicas de cada membro, recomendando produtos adequados às suas condições de saúde.</p>
+                    
+                <p class="mb-4">Produtos de Qualidade: Trabalhamos apenas com fornecedores confiáveis, garantindo que nossos membros tenham acesso a marijuana medicinal de alta qualidade, cultivada e processada com os mais altos padrões.</p>
+                    
+                <p class="mb-4">Educação Continuada: Promovemos a conscientização sobre o uso responsável da marijuana medicinal, fornecendo recursos educacionais, workshops e eventos para manter nossos membros informados e capacitados.</p>
             </div>
             <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
                 <div>
@@ -115,8 +114,7 @@
                         </svg>
                     </div>
                     <h3 class="mb-2 text-xl font-bold dark:text-white">Marketing</h3>
-                    <p class="text-gray-500 dark:text-gray-400">Plan it, create it, launch it. Collaborate seamlessly
-                        with all the organization and hit your marketing goals every month with our marketing plan.</p>
+                    <p class="text-gray-500 dark:text-gray-400">Planeje, crie, lance. Colabore de maneira eficaz com toda a organização e alcance suas metas de marketing a cada mês com o nosso plano de marketing exclusivo para a indústria da cannabis medicinal.</p>
                 </div>
                 <div>
                     <div
@@ -129,8 +127,7 @@
                         </svg>
                     </div>
                     <h3 class="mb-2 text-xl font-bold dark:text-white">Legal</h3>
-                    <p class="text-gray-500 dark:text-gray-400">Protect your organization, devices and stay compliant
-                        with our structured workflows and custom permissions made for you.</p>
+                    <p class="text-gray-500 dark:text-gray-400">Proteja sua organização, dispositivos e mantenha-se em conformidade com nossos fluxos de trabalho estruturados e permissões personalizadas projetadas especialmente para as necessidades legais da indústria de cannabis medicinal.</p>
                 </div>
                 <div>
                     <div
@@ -145,9 +142,8 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="mb-2 text-xl font-bold dark:text-white">Business Automation</h3>
-                    <p class="text-gray-500 dark:text-gray-400">Auto-assign tasks, send Slack messages, and much more.
-                        Now power up with hundreds of new templates to help you get started.</p>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Automação Empresarial</h3>
+                    <p class="text-gray-500 dark:text-gray-400">A eficiência é fundamental para o sucesso sustentável. Implementamos soluções avançadas de automação empresarial para otimizar processos internos, desde a produção até a distribuição, garantindo a consistência na qualidade dos produtos e a agilidade nas operações.</p>
                 </div>
                 <div>
                     <div
@@ -162,9 +158,8 @@
                                 clip-rule="evenodd"></path>
                         </svg>
                     </div>
-                    <h3 class="mb-2 text-xl font-bold dark:text-white">Finance</h3>
-                    <p class="text-gray-500 dark:text-gray-400">Audit-proof software built for critical financial
-                        operations like month-end close and quarterly budgeting.</p>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Finanças Sólidas</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Gerenciar recursos financeiros de maneira responsável é crucial para a estabilidade e crescimento. Nossa equipe financeira trabalha para manter uma gestão sólida, garantindo que cada investimento contribua para o avanço da pesquisa, qualidade do produto e expansão de nossos serviços.</p>
                 </div>
                 <div>
                     <div
@@ -176,9 +171,8 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="mb-2 text-xl font-bold dark:text-white">Enterprise Design</h3>
-                    <p class="text-gray-500 dark:text-gray-400">Craft beautiful, delightful experiences for both
-                        marketing and product with real cross-company collaboration.</p>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Projeto Empresarial Inovador</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Estamos constantemente explorando novas oportunidades e estratégias para impulsionar a indústria de cannabis medicinal. Nosso foco em projetos empresariais inovadores visa não apenas atender às necessidades do presente, mas também antecipar as demandas futuras, mantendo-nos na vanguarda do setor.</p>
                 </div>
                 <div>
                     <div
@@ -190,9 +184,8 @@
                                 clip-rule="evenodd"></path>
                         </svg>
                     </div>
-                    <h3 class="mb-2 text-xl font-bold dark:text-white">Operations</h3>
-                    <p class="text-gray-500 dark:text-gray-400">Keep your company’s lights on with customizable,
-                        iterative, and structured workflows built for all efficient teams and individual.</p>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Operações Eficientes</h3>
+                    <p class="text-gray-500 dark:text-gray-400">A excelência operacional é a base de nossa atuação. Desde a produção até a entrega, priorizamos operações eficientes que garantem a qualidade e segurança de nossos produtos, ao mesmo tempo em que mantemos uma pegada ambiental sustentável.</p>
                 </div>
             </div>
         </div>
@@ -204,53 +197,48 @@
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                     Depoimentos
                 </h2>
-                <p class="mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
-                    Conheças os depoimentos de pessoas que tiveram suas vidas mudadas
+                <p class="mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400"> 
+                Histórias de Transformação: Descubra como a Marijuana Medicinal Mudou Vidas
                 </p>
             </div>
             <div class="grid mb-8 lg:mb-12 lg:grid-cols-2">
                 <figure
                     class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 lg:border-r dark:bg-gray-800 dark:border-gray-700">
                     <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Speechless with how easy this
-                            was to integrate</h3>
-                        <p class="my-4">"I recently got my hands on Flowbite Pro, and holy crap, I'm speechless with
-                            how easy this was to integrate within my application. Most templates are a pain, code is
-                            scattered, and near impossible to theme.</p>
-                        <p class="my-4">Flowbite has code in one place and I'm not joking when I say it took me a
-                            matter of minutes to copy the code, customise it and integrate within a Laravel + Vue
-                            application.</p>
-                        <p class="my-4">If you care for your time, I hands down would go with this."</p>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Renascendo com a Cannabis Medicinal: O Testemunho de Ana</h3>
+                        "Descobri o poder da cannabis medicinal através da Associação. Há anos, sofro com dores crônicas decorrentes de uma condição de saúde, 
+                        e os medicamentos convencionais não traziam alívio suficiente.
+                        Foi então que conheci a Associação, onde recebi orientação adequada e acesso a produtos de cannabis medicinal. 
+                        Desde então, minha qualidade de vida melhorou significativamente. 
+                        As dores diminuíram, e consigo realizar minhas atividades diárias de maneira mais confortável. Sou imensamente grata por ter encontrado esse suporte e por 
+                        ter descoberto uma alternativa eficaz para o meu bem-estar."
                     </blockquote>
                     <figcaption class="flex justify-center items-center space-x-3">
                         <img class="w-9 h-9 rounded-full"
                             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
                             alt="profile picture">
                         <div class="space-y-0.5 font-medium dark:text-white text-left">
-                            <div>Bonnie Green</div>
-                            <div class="text-sm font-light text-gray-500 dark:text-gray-400">Developer at Open AI</div>
+                            <div>Ana Queiroz</div>
+                            <div class="text-sm font-light text-gray-500 dark:text-gray-400">Professora</div>
                         </div>
                     </figcaption>
                 </figure>
                 <figure
                     class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 dark:bg-gray-800 dark:border-gray-700">
                     <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Solid foundation for any
-                            project</h3>
-                        <p class="my-4">"FlowBite provides a robust set of design tokens and components based on the
-                            popular Tailwind CSS framework. From the most used UI components like forms and navigation
-                            bars to the whole app screens designed both for desktop and mobile, this UI kit provides a
-                            solid foundation for any project.</p>
-                        <p class="my-4">Designing with Figma components that can be easily translated to the utility
-                            classes of Tailwind CSS is a huge timesaver!"</p>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Noites Serenas, Dias Tranquilos: A Jornada de Carla com a Cannabis Medicinal</h3>
+                            "Depois de anos lutando contra a insônia e a ansiedade, encontrei na cannabis medicinal da Associação um aliado 
+                            fundamental para meu equilíbrio emocional. Os produtos oferecidos são de alta qualidade, e a equipe da Associação 
+                            sempre esteve disponível para esclarecer minhas dúvidas. Agora, durmo melhor e consigo enfrentar os desafios do dia 
+                            a dia de forma mais tranquila. Recomendo a todos que buscam uma abordagem mais natural para cuidar da saúde mental."
                     </blockquote>
                     <figcaption class="flex justify-center items-center space-x-3">
                         <img class="w-9 h-9 rounded-full"
                             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
                             alt="profile picture">
                         <div class="space-y-0.5 font-medium dark:text-white text-left">
-                            <div>Roberta Casas</div>
-                            <div class="text-sm font-light text-gray-500 dark:text-gray-400">Lead designer at Dropbox
+                            <div>Carla Dias</div>
+                            <div class="text-sm font-light text-gray-500 dark:text-gray-400">Nutricionista
                             </div>
                         </div>
                     </figcaption>
@@ -258,48 +246,44 @@
                 <figure
                     class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 lg:border-b-0 md:p-12 lg:border-r dark:bg-gray-800 dark:border-gray-700">
                     <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Mindblowing workflow and
-                            variants</h3>
-                        <p class="my-4">"As someone who mainly designs in the browser, I've been a casual user of
-                            Figma, but as soon as I saw and started playing with FlowBite my mind was 🤯.</p>
-                        <p class="my-4">Everything is so well structured and simple to use (I've learnt so much about
-                            Figma by just using the toolkit).</p>
-                        <p class="my-4">Aesthetically, the well designed components are beautiful and will
-                            undoubtedly level up your next application."</p>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Luz Contra as Trevas da Enxaqueca: A História de Mario com a Cannabis Medicinal</h3>
+                            Sou portador de uma condição que causa fortes episódios de enxaqueca. A cannabis medicinal da Associação tem sido minha 
+                            salvação. Através de consultas especializadas, pude encontrar o produto mais adequado para o meu caso. Além de aliviar as 
+                            dores agudas da enxaqueca, percebi uma melhoria geral na minha qualidade de vida. É incrível como a cannabis medicinal pode 
+                            fazer a diferença quando utilizada de forma responsável e orientada.
                     </blockquote>
                     <figcaption class="flex justify-center items-center space-x-3">
                         <img class="w-9 h-9 rounded-full"
                             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
                             alt="profile picture">
                         <div class="space-y-0.5 font-medium dark:text-white text-left">
-                            <div>Jese Leos</div>
-                            <div class="text-sm font-light text-gray-500 dark:text-gray-400">Software Engineer at
-                                Facebook</div>
+                            <div>Mario Andrade</div>
+                            <div class="text-sm font-light text-gray-500 dark:text-gray-400">Designer</div>
                         </div>
                     </figcaption>
                 </figure>
                 <figure
                     class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-gray-200 md:p-12 dark:bg-gray-800 dark:border-gray-700">
                     <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Efficient Collaborating</h3>
-                        <p class="my-4">"This is a very complex and beautiful set of elements. Under the hood it
-                            comes with the best things from 2 different worlds: Figma and Tailwind.</p>
-                        <p class="my-4">You have many examples that can be used to create a fast prototype for your
-                            team."</p>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Empreendedor em Equilíbrio: João e a Cannabis Medicinal na Gestão do Estresse</h3>
+                        "Como empreendedor, o estresse e a pressão do trabalho sempre foram desafios constantes. Decidi explorar a cannabis medicinal 
+                        como uma alternativa aos tradicionais ansiolíticos. Na Associação, fui orientado sobre os diferentes produtos disponíveis e encontrei 
+                        uma solução personalizada para minhas necessidades. A cannabis medicinal não apenas me ajudou a controlar a ansiedade, mas também 
+                        melhorou minha concentração e foco. Estou impressionado com os resultados e agradeço à Associação pelo suporte contínuo."
                     </blockquote>
                     <figcaption class="flex justify-center items-center space-x-3">
                         <img class="w-9 h-9 rounded-full"
                             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
                             alt="profile picture">
                         <div class="space-y-0.5 font-medium dark:text-white text-left">
-                            <div>Joseph McFall</div>
-                            <div class="text-sm font-light text-gray-500 dark:text-gray-400">CTO at Google</div>
+                            <div>João Pedro</div>
+                            <div class="text-sm font-light text-gray-500 dark:text-gray-400">Emrpesário</div>
                         </div>
                     </figcaption>
                 </figure>
             </div>
             <div class="text-center">
-                <a href="#"
+                <a href="{{ route('depoimentos') }}"
                     class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
                     Ler mais depoimentos
                 </a>
