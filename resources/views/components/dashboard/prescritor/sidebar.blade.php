@@ -4,7 +4,7 @@
     <div class="overflow-y-auto py-5 px-3 h-full bg-white dark:bg-gray-800">
         <ul class="space-y-2">
             <li>
-                <a href="#"
+                <a href="{{ route('visaoGeralPrescritor') }}"
                     class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                     <svg aria-hidden="true"
                         class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -16,7 +16,7 @@
                 </a>
             </li>
             <li>
-                <a href="#"
+                <a href="{{ route('pacientesPrescritor') }}"
                     class="flex items-center py-2 pr-2 pl-[6px] text-base font-medium text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
                     <svg aria-hidden="true"
                     class="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -27,7 +27,7 @@
                 </a>
             </li>
             <li>
-                <a href="#"
+                <a href="{{ route('consultasPrescritor') }}"
                     class="flex items-center py-2 pr-2 pl-[9px] text-base font-medium text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
                     <svg aria-hidden="true"
                     class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"

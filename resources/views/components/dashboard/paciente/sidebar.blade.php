@@ -4,7 +4,7 @@
     <div class="overflow-y-auto py-5 px-3 h-full bg-white dark:bg-gray-800">
         <ul class="space-y-2">
             <li>
-                <a href="#"
+                <a href="{{ route('visaoGeralPaciente') }}"
                     class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600 focus:bg-gray-100 dark:focus:bg-gray-700 group">
                     <svg aria-hidden="true"
                         class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -16,7 +16,7 @@
                 </a>
             </li>
             <li>
-                <a href="#"
+                <a href="{{ route('prescritoresPaciente') }}"
                     class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg transition duration-75 hover:bg-gray-200 dark:hover:bg-gray-600 focus:bg-gray-100 dark:focus:bg-gray-700 dark:text-white group">
                     <svg aria-hidden="true"
                     class="flex-shrink-0 w-[18px] h-[22px] ml-[1px] text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -49,11 +49,11 @@
                 </button>
                 <ul id="dropdown-documentos" class="hidden py-2 space-y-2">
                     <li>
-                        <a href="#"
+                        <a href="{{ route('receitasPaciente') }}"
                             class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600 focus:bg-gray-100 dark:focus:bg-gray-700">Receitas</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="{{ route('laudosPaciente') }}"
                             class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600 focus:bg-gray-100 dark:focus:bg-gray-700">Laudos</a>
                     </li>
                 </ul>
