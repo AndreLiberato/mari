@@ -5,7 +5,7 @@ namespace App\Http\Api;
 
 class ApiLinks
 {
-    const BASE_API_URL = "http://localhost:8080";
+    const BASE_API_URL = "https://marijuana-api-22e31cc2869d.herokuapp.com";
 
     // Auth
     const CADASTRO_PACIENTE = self::BASE_API_URL."/auth/cadastro/paciente";
